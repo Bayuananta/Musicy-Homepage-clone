@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.tour').slick({
+  $('.tour-content').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,

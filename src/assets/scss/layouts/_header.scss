@@ -165,113 +165,113 @@
             span{
                 cursor: pointer;
             }
-        }
 
-        .tour{
-            position: relative;
-            padding-left: toRem(50);
-            padding-right: toRem(50);
-            width: 100%;
-            height: 100%;
-            background: rgba(20, 24, 44, 0.75);
-            box-shadow: 0px 130px 70px -90px rgba(0, 0, 0, 0.25);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .slick-prev{
-                position: absolute;
-                right: -100px !important;
-            }
-
-
-            .tour-list{
+            .tour-content{
+                position: relative;
+                padding-left: toRem(50);
+                padding-right: toRem(50);
+                width: 100%;
+                height: 100%;
+                background: rgba(20, 24, 44, 0.75);
+                box-shadow: 0px 130px 70px -90px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-radius: 5px;
                 display: flex;
-                justify-items: center;
+                justify-content: center;
                 align-items: center;
-
-                .img-tour{
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    align-items: center;
-                    width: toRem(270);
-                    height: toRem(379);
-                    background: url(../../media/images/spencer-davis-naFHFLV5cqU-unsplash.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    margin-right: toRem(88);
-                    margin-left: toRem(50);
-                    
-
-                    h3{
-                        font-family: "gilroy";
-                        font-style: normal;
-                        font-weight: 800;
-                        font-size: 36px;
-                        line-height: 40px;
-                        color: $color-5;
-                    }
-
-                    
+    
+                .slick-prev{
+                    position: absolute;
+                    right: -100px !important;
                 }
-
-                .tour-content{
-                    width: toRem(474);
-                    height: toRem(363);
-
-                    p{
-                        font-family: 'inter', normal;
-                        font-weight: 400;
-                        font-size: toRem(16);
-                        line-height: toRem(24);
-                        &:first-child{
-                            color: $state-1;
-                        }
-
-                        &:nth-child(4){
-                            color: #9FA1A7;
-                            margin-top: toRem(24);
-                        }
-                    }
-
-                    h2{
-                        font-family: "gilroy";
-                        font-style: normal;
-                        font-weight: 800;
-                        font-size: 43px;
-                        line-height: 47px;
-                        color: $color-5;
-                        margin-bottom: toRem(6);
-                    }
-
-                    h6{
-                        font-family: 'Gilroy';
-                        font-style: normal;
-                        font-weight: 800;
-                        font-size: 22px;
-                        line-height: 24px;
-                        color: $color-5;
-                    }
-
-                    .tour-btn{
+    
+    
+                .tour-list{
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+    
+                    .img-tour{
                         display: flex;
-                        align-items: center;
                         justify-content: center;
-                        background-color: $primary;
-                        border: 2px solid #375FEB;
-                        border-radius: toRem(40);
-                        width: toRem(201);
-                        height: toRem(63);
-                        @include Small-title(lowercase);
-                        font-family: 'inter', normal;
-                        font-weight: 500;
-                        text-align: center;
-                        color: $color-5;
-                        margin-top: toRem(38);
+                        flex-direction: column;
+                        align-items: center;
+                        width: toRem(270);
+                        height: toRem(379);
+                        background: url(../../media/images/spencer-davis-naFHFLV5cqU-unsplash.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        margin-right: toRem(88);
+                        margin-left: toRem(50);
+                        
+    
+                        h3{
+                            font-family: "gilroy";
+                            font-style: normal;
+                            font-weight: 800;
+                            font-size: 36px;
+                            line-height: 40px;
+                            color: $color-5;
+                        }
+    
+                        
+                    }
+    
+                    .tour-contents{
+                        width: toRem(474);
+                        height: toRem(363);
+    
+                        p{
+                            font-family: 'inter', normal;
+                            font-weight: 400;
+                            font-size: toRem(16);
+                            line-height: toRem(24);
+                            &:first-child{
+                                color: $state-1;
+                            }
+    
+                            &:nth-child(4){
+                                color: #9FA1A7;
+                                margin-top: toRem(24);
+                            }
+                        }
+    
+                        h2{
+                            font-family: "gilroy";
+                            font-style: normal;
+                            font-weight: 800;
+                            font-size: 43px;
+                            line-height: 47px;
+                            color: $color-5;
+                            margin-bottom: toRem(6);
+                        }
+    
+                        h6{
+                            font-family: 'Gilroy';
+                            font-style: normal;
+                            font-weight: 800;
+                            font-size: 22px;
+                            line-height: 24px;
+                            color: $color-5;
+                        }
+    
+                        .tour-btn{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: $primary;
+                            border: 2px solid #375FEB;
+                            border-radius: toRem(40);
+                            width: toRem(201);
+                            height: toRem(63);
+                            @include Small-title(lowercase);
+                            font-family: 'inter', normal;
+                            font-weight: 500;
+                            text-align: center;
+                            color: $color-5;
+                            margin-top: toRem(38);
+                        }
                     }
                 }
             }
