@@ -1,0 +1,127 @@
+.album{
+    margin-top: toRem(320);
+    background: radial-gradient(36.28% 43.56% at 54.17% 41.54%, rgba(16, 19, 36, 0.69) 0%, rgba(16, 19, 36, 0.85) 52.08%, #101324 100%), url(../../media/images/ben-pham-TzgbYnxj5I8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: toRem(835);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .album--title{
+        width: toRem(1000);
+        height: toRem(92);
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+        font-family: "gilroy", normal;
+        font-weight: 800;
+        color: $color-5;
+        line-height: toRem(47);
+        text-align: center;    
+        border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+    }
+
+    .arrow{
+        width: toRem(1000);
+        height: toRem(93);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span{
+            margin-left: toRem(20);
+            margin-right: toRem(20);
+            cursor: pointer;
+        }
+    }
+
+    .album__cover{
+        display: flex;
+        flex-direction: row;
+        height: toRem(405);
+        width: 100%;
+        justify-items: center;
+    }
+
+    .album__content{
+        width: toRem(300);
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+
+        img{
+            border-radius: 5px;
+            justify-items: center;
+        }
+
+        .album__content-title{
+            margin-top: toRem(25);
+
+            h3{
+                font-family: "gilroy", normal;
+                font-weight: 800;
+                line-height: toRem(40);
+                text-align: center;
+                color: $color-5;
+            }
+
+            p{
+                font-family: "inter", normal;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: center;
+                color: $color-5;
+            }
+        }
+    }
+
+    .btn{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin: toRem(30) auto 0;
+        width: toRem(434);
+
+        .btn--primary{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #375FEB;
+            border-radius: 40px;
+            background-color: #375FEB;
+            width: toRem(200);
+            height: toRem(63);
+            margin-right: toRem(32);
+            font-family: "inter", normal;
+            font-weight: 500;
+            line-height: 22px;
+            font-size: toRem(18);
+            text-align: center;
+            color: $color-5;
+        }
+
+        .btn--secondary{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-1;
+            border: 2px solid #375FEB;
+            border-radius: 40px;
+            width: toRem(200);
+            height: toRem(63);
+            font-family: "inter", normal;
+            font-weight: 500;
+            line-height: 22px;
+            font-size: toRem(18);
+            text-align: center;
+            color: $color-5;
+        }
+    }
+}

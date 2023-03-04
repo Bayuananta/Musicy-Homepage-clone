@@ -1,0 +1,108 @@
+// Brand Color
+$primary: #375FEB;
+$secondary: #9B5DD5;
+$secondary-2: #5486E8;
+$secondary-3: #15A8FB;
+$secondary-4: #39C2EE;
+
+// Text Color
+$color-1: #101324;
+$color-2: #13172B;
+$color-3: #212433;
+$color-4: #404250;
+$color-5: #FFFFFF;
+
+// State Colord
+$state-1: #3B94E7;
+$state-2: #2FA041;
+$state-3: #DE8B3F;
+$state-4: #FC0E0E;
+
+// Headings
+$h1: 50px;
+$h2: 43px;
+$h3: 36px;
+$h4: 30px;
+$h5: 25px;
+$h6: 22px;
+
+// Body Paragraph
+@mixin p-1() {
+    font-size: 22px;
+    line-height: 33px;
+}
+
+@mixin p-2(){
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@mixin p-3(){
+    font-size: 18px;
+    line-height: 27px;
+}
+
+@mixin p-4(){
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin p-5(){
+    font-size: 14px;
+    line-height: 21px;
+}
+
+// Display
+@mixin Big-Bold($content) {
+    font-size: 94px;
+    text-transform: $content;
+    line-height: 70.4px;
+}
+
+@mixin Big-Light($content){
+    font-size: 94px;
+    text-transform: $content;
+    line-height: 103.4px;
+}
+
+@mixin Large($content){
+    font-size: 72px;
+    text-transform: $content;
+    line-height: 60px;
+}
+
+@mixin Medium-Upper($content){
+    font-size: 20px;
+    text-transform: $content;
+    line-height: 22px;
+}
+
+@mixin Medium-Bold-Upper($content){
+    font-size: 18px;
+    text-transform: $content;
+    line-height: 22px;
+}
+
+@mixin Small-Upper($content){
+    font-size: 16px;
+    text-transform: $content;
+    line-height: 17.6px;
+}
+
+@mixin Normal-title($content){
+    font-size: 20px;
+    text-transform: $content;
+    line-height: 22px;
+}
+
+@mixin Small-title($content){
+    font-size: 18px;
+    text-transform: $content;
+    line-height: 21.6px;
+}
+
+@mixin Extra-Small-title($content){
+    font-size: 14px;
+    text-transform: $content;
+    line-height: 16.8px;
+}
