@@ -11788,7 +11788,17 @@ textarea.form-control-lg {
   margin: 0 auto;
   margin-top: 9.375rem;
 }
-.home .container .tour {
+.home .container .tours {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.home .container .tours span {
+  cursor: pointer;
+}
+.home .container .tours .tour-content {
   position: relative;
   padding-left: 3.125rem;
   padding-right: 3.125rem;
@@ -11803,16 +11813,16 @@ textarea.form-control-lg {
   justify-content: center;
   align-items: center;
 }
-.home .container .tour .slick-prev {
+.home .container .tours .tour-content .slick-prev {
   position: absolute;
   right: -100px !important;
 }
-.home .container .tour .tour-list {
+.home .container .tours .tour-content .tour-list {
   display: flex;
   justify-items: center;
   align-items: center;
 }
-.home .container .tour .tour-list .img-tour {
+.home .container .tours .tour-content .tour-list .img-tour {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -11825,7 +11835,7 @@ textarea.form-control-lg {
   margin-right: 5.5rem;
   margin-left: 3.125rem;
 }
-.home .container .tour .tour-list .img-tour h3, .home .container .tour .tour-list .img-tour .h3 {
+.home .container .tours .tour-content .tour-list .img-tour h3, .home .container .tours .tour-content .tour-list .img-tour .h3 {
   font-family: "gilroy";
   font-style: normal;
   font-weight: 800;
@@ -11833,24 +11843,24 @@ textarea.form-control-lg {
   line-height: 40px;
   color: #FFFFFF;
 }
-.home .container .tour .tour-list .tour-content {
+.home .container .tours .tour-content .tour-list .tour-contents {
   width: 29.625rem;
   height: 22.6875rem;
 }
-.home .container .tour .tour-list .tour-content p {
+.home .container .tours .tour-content .tour-list .tour-contents p {
   font-family: "inter", normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.home .container .tour .tour-list .tour-content p:first-child {
+.home .container .tours .tour-content .tour-list .tour-contents p:first-child {
   color: #3B94E7;
 }
-.home .container .tour .tour-list .tour-content p:nth-child(4) {
+.home .container .tours .tour-content .tour-list .tour-contents p:nth-child(4) {
   color: #9FA1A7;
   margin-top: 1.5rem;
 }
-.home .container .tour .tour-list .tour-content h2, .home .container .tour .tour-list .tour-content .h2 {
+.home .container .tours .tour-content .tour-list .tour-contents h2, .home .container .tours .tour-content .tour-list .tour-contents .h2 {
   font-family: "gilroy";
   font-style: normal;
   font-weight: 800;
@@ -11859,7 +11869,7 @@ textarea.form-control-lg {
   color: #FFFFFF;
   margin-bottom: 0.375rem;
 }
-.home .container .tour .tour-list .tour-content h6, .home .container .tour .tour-list .tour-content .h6 {
+.home .container .tours .tour-content .tour-list .tour-contents h6, .home .container .tours .tour-content .tour-list .tour-contents .h6 {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
@@ -11867,7 +11877,7 @@ textarea.form-control-lg {
   line-height: 24px;
   color: #FFFFFF;
 }
-.home .container .tour .tour-list .tour-content .tour-btn {
+.home .container .tours .tour-content .tour-list .tour-contents .tour-btn {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -4,10 +4,12 @@ var __webpack_exports__ = {};
   !*** ./src/assets/js/custom/carousel.js ***!
   \******************************************/
 $(document).ready(function(){
-  $('.tour').slick({
+  $('.tour-content').slick({
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    prevArrow: $('#btn-prev-tour'),
+    nextArrow: $('#btn-next-tour'),
   });
 });
 
