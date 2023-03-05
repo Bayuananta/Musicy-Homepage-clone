@@ -59,6 +59,8 @@
         img{
             border-radius: 5px;
             justify-items: center;
+            display: block;
+            object-fit: cover;
         }
 
         .album__content-title{

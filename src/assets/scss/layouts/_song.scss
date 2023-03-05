@@ -1,0 +1,109 @@
+.song{
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    height: toRem(1061);
+
+    .container-song{
+        width: toRem(1000);
+        margin: 0 auto;
+
+        .song__title{
+            padding-top: toRem(50) ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'gilroy', normal;
+            height: toRem(150);
+            font-weight: 800;
+            line-height: 47px;
+            text-align: center;
+            color: $color-5;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+        }
+
+        .btn-song{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: toRem(50) auto 0;
+            width: toRem(200);
+            height: toRem(64);
+            border: 2px solid $primary;
+            border-radius: 40px;
+            background-color: $color-1;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: $color-5;
+        }
+
+        .song__lists{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: toRem(613);
+            margin: toRem(71) auto 0;
+
+            .song__list{
+                border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+                display: flex;
+                width: 100%;
+                height: toRem(118);
+                align-items: center;
+                justify-content: space-between;
+                transition: .5s ease-out;
+            
+                &:hover{
+                    background: #9B5DD5;
+                }
+
+                .img-song{
+                    display: block;
+                    object-fit: cover;
+                    margin-left: toRem(20);
+                    border-radius: 3px;
+                }
+
+                h5{
+                    width: toRem(273);
+                    font-family: 'gilroy', normal;
+                    font-weight: 800;
+                    line-height: 25px;
+                    color: $color-5;
+                }
+
+                p{
+                    font-family: 'inter', normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $color-5;
+                    &:nth-child(3){
+                        width: toRem(285);
+                    }
+                }
+
+                .play__btn{
+                    background-color: $primary;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: toRem(39);
+                    height: toRem(39);
+                    transition: .5s ease-out;
+                    margin-right: toRem(23);
+                    cursor: pointer;
+                }
+
+                &:hover .play__btn{
+                    background-color: #101324;
+                }
+            }
+        }
+    }
+}
