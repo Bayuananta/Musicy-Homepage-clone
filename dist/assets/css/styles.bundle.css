@@ -11794,6 +11794,17 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
   align-items: center;
+  position: relative;
+}
+.home .container .tours .arrow__left {
+  position: absolute;
+  z-index: 10;
+  left: 3%;
+}
+.home .container .tours .arrow__right {
+  position: absolute;
+  z-index: 10;
+  left: 97%;
 }
 .home .container .tours span {
   cursor: pointer;
@@ -11832,8 +11843,8 @@ textarea.form-control-lg {
   background: url(../media/images/spencer-davis-naFHFLV5cqU-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  margin-left: 1.25rem;
   margin-right: 5.5rem;
-  margin-left: 3.125rem;
 }
 .home .container .tours .tour-content .tour-list .img-tour h3, .home .container .tours .tour-content .tour-list .img-tour .h3 {
   font-family: "gilroy";
@@ -12030,7 +12041,7 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "gilroy", normal;
+  font-family: "Gilroy", normal;
   height: 9.375rem;
   font-weight: 800;
   line-height: 47px;
@@ -12113,6 +12124,226 @@ textarea.form-control-lg {
 }
 .song .container-song .song__lists .song__list:hover .play__btn {
   background-color: #101324;
+}
+
+.videos {
+  position: relative;
+  background-color: #101324;
+  width: 100%;
+  height: 86.375rem;
+}
+.videos .container {
+  position: relative;
+  width: 62.5rem;
+  height: 100%;
+}
+.videos .container .title {
+  padding-top: 3.125rem;
+  width: 100%;
+  height: 9.375rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 47px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+.videos .container .video__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 67.375rem;
+}
+.videos .container .video__list .video__list--sub {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+.videos .container .video__list .video__list--sub span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 96%;
+  top: 35%;
+  z-index: 10;
+  background: #13172B;
+  box-shadow: -9px 0px 15px -3px rgba(0, 0, 0, 0.69);
+}
+.videos .container .video__list .video__list--sub .videos__lists {
+  position: relative;
+  width: 100%;
+  height: 19.375rem;
+  display: flex;
+  justify-content: space-between;
+}
+.videos .container .video__list .video__list--sub .videos__lists .video__content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.videos .container .video__list .video__list--sub .videos__lists .video__content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #9FA1A7;
+}
+.videos .container .video__list .video__list--sub .videos__lists .video__content .video {
+  position: relative;
+  width: 19.0625rem;
+  height: 10.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.videos .container .video__list .video__list--sub .videos__lists .video__content .video img {
+  position: relative;
+  border-radius: 5px;
+}
+.videos .container .video__list .video__list--sub .videos__lists .video__content .video .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.0625rem;
+  height: 3.0625rem;
+  background-color: #375FEB;
+  border-radius: 50%;
+  z-index: 10;
+}
+.videos .container .video__list .video__list--sub .videos__lists .video__content .video .play-btn img {
+  width: 10px;
+  height: 14px;
+}
+.videos .container .video__list .video__list--sub .sub-title {
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
+.videos .container .video__list .video__list--sub h6, .videos .container .video__list .video__list--sub .h6 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.videos .container .video__list .video__list--main {
+  width: 100%;
+  height: 43.75rem;
+  display: flex;
+  flex-direction: column;
+}
+.videos .container .video__list .video__list--main .about__video {
+  width: 100%;
+  height: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+.videos .container .video__list .video__list--main .about__video h4, .videos .container .video__list .video__list--main .about__video .h4 {
+  margin-top: 1.875rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+.videos .container .video__list .video__list--main .about__video p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #9FA1A7;
+}
+.videos .container .video__list .video__list--main .video__main {
+  width: 100%;
+  height: 35.125rem;
+  background: url(../media/images/video-main.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.videos .container .video__list .video__list--main .video__main .play__btn {
+  background-color: #375FEB;
+  border-radius: 50%;
+  display: flex;
+  margin-top: 15rem;
+  justify-content: center;
+  align-items: center;
+  width: 5.4375rem;
+  height: 5.4375rem;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+.videos .container .video__list .video__list--main .video__main .play__btn img {
+  width: 1.25rem;
+  height: toRemk(25);
+}
+.videos .container .video__list .video__list--main .video__main .play__btn:hover {
+  background: none;
+  border: 5px solid #375FEB;
+}
+.videos .container .video__list .video__list--main .video__main .video__feature {
+  width: 59.375rem;
+  height: 3.75rem;
+  margin-top: 10.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.videos .container .video__list .video__list--main .video__main .video__feature .video__duration {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.videos .container .video__list .video__list--main .video__main .video__feature .video__duration span {
+  width: 3.875rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #F21E1E;
+}
+.videos .container .video__list .video__list--main .video__main .video__feature .video__feature--btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.625rem;
+}
+.videos .container .video__list .video__list--main .video__main .video__feature .video__feature--btn .main-btn {
+  width: 5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 1.0625rem;
+  margin-left: 0.3125rem;
+}
+.videos .container .video__list .video__list--main .video__main .video__feature .video__feature--btn .size-btn {
+  width: 1.25rem;
+  margin-right: 0.3125rem;
 }
 
 /*# sourceMappingURL=styles.bundle.css.map*/

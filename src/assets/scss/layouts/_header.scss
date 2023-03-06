@@ -161,6 +161,20 @@
             width: 100%;
             height: 100%;
             align-items: center;
+            position: relative;
+
+                .arrow__left{
+                   position: absolute;
+                   z-index: 10;
+                   left: 3%;
+                }
+
+                .arrow__right{
+                    position: absolute;
+                    z-index: 10;
+                    left: 97%;
+                }
+            
 
             span{
                 cursor: pointer;
@@ -202,8 +216,8 @@
                         background: url(../../media/images/spencer-davis-naFHFLV5cqU-unsplash.jpg);
                         background-size: cover;
                         background-position: center;
+                        margin-left: toRem(20);
                         margin-right: toRem(88);
-                        margin-left: toRem(50);
                         
     
                         h3{
