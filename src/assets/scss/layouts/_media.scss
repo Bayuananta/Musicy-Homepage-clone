@@ -5,13 +5,21 @@
     height: toRem(947);
 
     .container{
+        padding: 0 toRem(32);
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         max-width: toRem(1000);
+        width: 100%;
         height: toRem(553);
         padding-top: 13rem;
+
+        @include respond(tablet){
+            padding-top: 0;
+            flex-direction: column;
+            padding-bottom: 13rem;
+        }
 
         .media__gallery{
             position: relative;
@@ -19,21 +27,47 @@
             flex: 1;
             height: toRem(450);
 
+            @include respond(tablet){
+                width: 100%;
+                flex: none;
+                height: 100%;
+                flex-wrap: wrap;
+            }
+
             .media__gallery--img{
                 position: relative;
                 display: flex;
                 flex-direction: column;
                 width: 100%;
 
+                @include respond(tablet){
+                    width: auto;
+                    margin: 0 auto;
+                }
+
+                @include respond(phone-smallest){
+                    width: 80%;
+                }
+
                 .media__gallery--img-1{
                     position: absolute;
                     top: 16%;
+
+                    @include respond (tablet){
+                        position: unset;
+                        width: max-content;
+                    }
                 }
 
                 .media__gallery--img-2{
                     position: absolute;
                     top: -5%;
                     left: 10%;
+
+                    @include respond (tablet){
+                        position: unset;
+                        width: max-content;
+                    }
                 }
 
                 .media__gallery--img-3{
@@ -43,6 +77,12 @@
                     width: toRem(200);
                     height: toRem(200);
                     border-radius: 5px;
+
+                    @include respond (tablet){
+                        position: unset;
+                        width: 100%;
+                        justify-content: center;
+                    }
                 }
 
                 img{
@@ -53,7 +93,11 @@
                     background: linear-gradient(180deg, rgba(19, 23, 43, 0.7) 0%, rgba(19, 23, 43, 0.5) 100%);
                     box-shadow: 0px 69px 80px -30px rgba(0, 0, 0, 0.31);
                     border-radius: 5px;
-                    margin-bottom: toRem(30);
+                    margin-bottom: toRem(32);
+
+                    @include respond (tablet){
+                        margin-bottom: toRem(16);
+                    }
                 }
             }
         }
@@ -63,6 +107,13 @@
             flex-direction: column;
             flex: 0 0 30%;
             height: toRem(320);
+
+            @include respond (tablet){
+                height: 100%;
+                text-align: center;
+                justify-content: center;
+                width: 100%;
+            }
 
             h2{
                 font-family: 'Gilroy';
@@ -80,6 +131,10 @@
                 font-weight: 400;
                 color: #9FA1A7;
                 width: toRem(243);
+
+                @include respond (tablet){
+                    margin: 0 auto;
+                }
             }
 
             .follow-btn{
@@ -97,6 +152,10 @@
                 font-style: normal;
                 font-weight: 500;
                 color: $color-5;
+
+                @include respond (tablet){
+                    margin: toRem(16) auto;
+                }
             }
         }
     }

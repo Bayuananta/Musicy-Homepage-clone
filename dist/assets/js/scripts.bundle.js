@@ -21658,7 +21658,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 jquery__WEBPACK_IMPORTED_MODULE_1__(document).ready(function () {
-  console.log('Welcome');
+  jquery__WEBPACK_IMPORTED_MODULE_1__('.button').on('click', function() {
+    jquery__WEBPACK_IMPORTED_MODULE_1__(this).css({ "display": "none" });
+    jquery__WEBPACK_IMPORTED_MODULE_1__('.close').css({ "display": "block" });
+    jquery__WEBPACK_IMPORTED_MODULE_1__('nav .menus').slideDown(400);
+    jquery__WEBPACK_IMPORTED_MODULE_1__('nav .login-btn').slideDown(500);
+    jquery__WEBPACK_IMPORTED_MODULE_1__('nav .menus').css({ "display": "flex" });
+    jquery__WEBPACK_IMPORTED_MODULE_1__('nav .login-btn').css({ "display": "block" });
+});
+jquery__WEBPACK_IMPORTED_MODULE_1__('.close').on('click', function() {
+    jquery__WEBPACK_IMPORTED_MODULE_1__(this).css({ "display": "none" });
+    jquery__WEBPACK_IMPORTED_MODULE_1__('.button').css({ "display": "block" });
+    jquery__WEBPACK_IMPORTED_MODULE_1__('nav .menus').slideUp(500);
+    jquery__WEBPACK_IMPORTED_MODULE_1__('nav .login-btn').slideUp(300);
+});
 })
 })();
 

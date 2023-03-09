@@ -1,110 +1,147 @@
-.subscribe{
-    background: $color-2;
-    height: toRem(386);
+footer{
+    height: max-content;
+    
+    @include respond(tab-mini){
+        padding-top: 26rem;
+    }
 
-    .container{
-        width: toRem(1000);
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        .subscribe__input{
+    .subscribe{
+        background: $color-2;
+        height: toRem(386);
+    
+        .container{
+            max-width: toRem(1000);
+            width: 100%;
+            height: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            max-width: toRem(674);
-            height: toRem(64);
-            margin: toRem(40) auto 0;
-
-            .subscribe__btn{
+    
+            
+    
+            .subscribe__input{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: toRem(200);
-                height: 100%;
-                border-radius: 40px;
-                background: #375FEB;
-                color: $color-5;
-                @include Small-title(lowercase);
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 500;
-                border: 2px solid #375FEB;
-            }
+                max-width: toRem(674);
+                width: 100%;
+                height: toRem(64);
+                margin: toRem(40) auto 0;
 
-            
+                @include respond(tab-mini){
+                    flex-direction: column;
+                }
     
-            .subscribe__input--type{
-                display: flex;
-                justify-content: center;
-                width: toRem(449);
-                height: 100%;
-                background: rgba(255, 255, 255, 0.03);
-                box-shadow: 0px 130px 70px -90px rgba(0, 0, 0, 0.25);
-                border-radius: 45.5px;
-                margin-right: toRem(24);
-
-                input{
-                    @include p-4();
-                    width: toRem(365);
-                    border: none;
-                    outline: none;
-                    background: none;
+                .subscribe__btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: toRem(200);
+                    height: 100%;
+                    border-radius: 40px;
+                    background: #375FEB;
                     color: $color-5;
+                    @include Small-title(lowercase);
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    border: 2px solid #375FEB;
+
+                    @include respond(tab-mini){
+                        padding: toRem(16);
+                    }
+                }
+    
+                
+        
+                .subscribe__input--type{
+                    display: flex;
+                    justify-content: center;
+                    width: toRem(449);
+                    height: 100%;
+                    background: rgba(255, 255, 255, 0.03);
+                    box-shadow: 0px 130px 70px -90px rgba(0, 0, 0, 0.25);
+                    border-radius: 45.5px;
+                    margin-right: toRem(24);
+
+                    @include respond(tab-mini){
+                        padding: toRem(16);
+                        margin-bottom: toRem(16)
+                    }
+
+                    @include respond(phone){
+                        width: 80%;
+                    }
+    
+                    input{
+                        @include p-4();
+                        width: toRem(365);
+                        border: none;
+                        outline: none;
+                        background: none;
+                        color: $color-5;
+                    }
+                }
+            }
+    
+            h3{
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 800;
+                color: $color-5;
+                margin: 0 auto;
+                text-align: center;
+
+                @include respond(tab-mini){
+                    margin-bottom: toRem(32);
                 }
             }
         }
-
-        h3{
-            font-family: 'Gilroy';
-            font-style: normal;
-            font-weight: 800;
-            color: $color-5;
-            margin: 0 auto;
-            text-align: center;
-        }
     }
-}
-
-.contact{
-    width: toRem(370);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-
-    .sosmed{
-        display: flex;
-        width: toRem(244);
-        justify-content: space-between;
-        align-items: center;
-        height: toRem(24);
-        margin-bottom: toRem(64);
-    }
-
-    p{
+    
+    .contact{
+        width: toRem(370);
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        padding-top: toRem(24);
-        @include p-4();
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        color: #9FA1A7;
-    }
-
-    span{
-        @include p-5();
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        text-align: center;
-        color: #9FA1A7;
-        margin-bottom: toRem(60);
+        flex-direction: column;
+        margin: 0 auto;
+    
+        @include respond(tablet) {
+            
+        }
+    
+        .sosmed{
+            display: flex;
+            width: toRem(244);
+            justify-content: space-between;
+            align-items: center;
+            height: toRem(24);
+            margin-bottom: toRem(64);
+        }
+    
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-top: toRem(24);
+            @include p-4();
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #9FA1A7;
+        }
+    
+        span{
+            @include p-5();
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            text-align: center;
+            color: #9FA1A7;
+            margin-bottom: toRem(60);
+        }
     }
 }

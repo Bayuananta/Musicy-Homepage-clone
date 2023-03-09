@@ -1,35 +1,5 @@
 $(document).ready(function(){
 
-  $('.videos__lists').on('init', function(event){
-    if($('.videos__lists').attr('aria-disabled')=="true") {
-           $('#btn-next-tour').addClass('disabled');
-       }
-     else {
-           $('#btn-next-tour').removeClass('disabled');
-     }
-     
-     if($('.videos__lists').attr('aria-disabled')=="true") {
-      $('#btn-prev-tour').addClass('disabled');
-    }
-  else {
-      $('#btn-prev-tour').removeClass('disabled');
-    }
-  });
-  $('.videos__lists').on('afterChange', function(event){
-    if($('.videos__lists').attr('aria-disabled')=="true") {
-           $('#btn-next-tour').addClass('disabled');
-       }
-     else {
-           $('#btn-next-tour').removeClass('disabled');
-     }
-     
-     if($('.videos__lists').attr('aria-disabled')=="true") {
-      $('#btn-prev-tour').addClass('disabled');
-    }
-  else {
-      $('#btn-prev-tour').removeClass('disabled');
-    }
-  });
   $('.tour-content').slick({
     infinite: true,
     slidesToShow: 1,
@@ -44,31 +14,78 @@ $('.videos__lists').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   prevArrow: $('#prev-btn-video'),
-  nextArrow: $('#next-btn-video')
+  nextArrow: $('#next-btn-video'),
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: true,
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 376,
+      settings: {
+        arrows: true,
+        slidesToShow: 1,
+      }
+    },
+  ]
 });
 
 $('.album__cover').slick({
   centerMode: true,
-  centerPadding: '260px',
+  centerPadding: '250px',
   slidesToShow: 3,
   prevArrow: $('#prev-btn'),
   nextArrow: $('#next-btn'),
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1441,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '170px',
         slidesToShow: 3
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 1201,
       settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
+        arrows: true,
+        centerMode: false,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 993,
+      settings: {
+        arrows: true,
+        centerMode: false,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: true,
+        centerMode: false,
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 577,
+      settings: {
+        arrows: true,
+        centerMode: false,
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 376,
+      settings: {
+        arrows: true,
+        centerMode: false,
         slidesToShow: 1
       }
     }

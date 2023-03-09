@@ -5,8 +5,11 @@
     height: toRem(1061);
 
     .container-song{
-        width: toRem(1000);
+        max-width: toRem(1000);
+        width: 100%;
         margin: 0 auto;
+
+
 
         .song__title{
             padding-top: toRem(50) ;
@@ -67,6 +70,11 @@
                     object-fit: cover;
                     margin-left: toRem(20);
                     border-radius: 3px;
+                    @include respond (phone){
+                        margin: 0;
+                        width: toRem(48);
+                    }
+                    
                 }
 
                 h5{
@@ -75,6 +83,16 @@
                     font-weight: 800;
                     line-height: 25px;
                     color: $color-5;
+
+                    @include respond (tablet){
+                        width: auto;
+                    }
+
+                    @include respond (phone) {
+                        width: 35%;
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
                 }
 
                 p{
@@ -85,6 +103,16 @@
                     color: $color-5;
                     &:nth-child(3){
                         width: toRem(285);
+
+                        @include respond (tablet){
+                            width: auto;
+                        }
+
+                        @include respond(phone) {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 20%;
+                        }
                     }
                 }
 
@@ -99,6 +127,11 @@
                     transition: .5s ease-out;
                     margin-right: toRem(23);
                     cursor: pointer;
+
+                    @include respond(phone){
+                        margin: 0;
+                        padding: toRem(16);
+                    }
                 }
 
                 &:hover .play__btn{
