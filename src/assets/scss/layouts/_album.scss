@@ -1,5 +1,4 @@
 .album{
-    margin-top: toRem(320);
     background: radial-gradient(36.28% 43.56% at 54.17% 41.54%, rgba(16, 19, 36, 0.69) 0%, rgba(16, 19, 36, 0.85) 52.08%, #101324 100%), url(../../media/images/ben-pham-TzgbYnxj5I8-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -9,10 +8,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    @include respond (tablet){
-        margin-top: toRem(640);
-    }
     
     .album--title{
         max-width: toRem(1000);
@@ -53,6 +48,11 @@
         height: toRem(405);
         width: 100%;
         justify-items: center;
+        
+
+        .slick-center .album__content-title{
+            opacity: 1;
+        }
 
         @include respond(tablet){
             height: auto;
@@ -94,6 +94,8 @@
 
         .album__content-title{
             margin-top: toRem(25);
+            opacity: 0;
+            transition: all linear .2s;
 
             h3{
                 font-family: "gilroy", normal;

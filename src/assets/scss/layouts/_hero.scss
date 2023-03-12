@@ -1,0 +1,229 @@
+.hero{
+    width: 100%;
+    height: 100%;
+
+    .title{
+        width: toRem(190);
+        height: toRem(284);
+        margin-top: toRem(110);
+        margin-left: auto;
+        margin-right: auto;
+        h1{
+            @include Big-Bold(uppercase);
+            @include respond (phone){
+                font-size: 80px;
+                line-height: 60px;
+            }
+
+            span{
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 800;
+                color: $color-5;
+                margin: 0;
+
+                &:first-child{
+                    color: $primary;
+                }
+                &:nth-child(3){
+                    color: $primary;
+                }
+            }
+        }
+        p{
+            @include Medium-Upper(uppercase);
+            color: $color-5;
+            margin-top: 15px;
+        }
+    }
+
+    .container{
+        position: relative;
+        max-width: toRem(1000);
+        width: 100%;
+        height: toRem(507);
+        margin: 0 auto;
+        margin-top: toRem(150);
+
+        @include respond(tablet){
+            height: 100%;
+        }
+
+        .tours{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            position: relative;
+
+                .arrow__left{
+                   position: absolute;
+                   z-index: 10;
+                   left: 3%;
+                }
+
+                .arrow__right{
+                    position: absolute;
+                    z-index: 10;
+                    left: 97%;
+
+                    @include respond (tablet) {
+                        left: 94.5%;
+                    }
+                }
+            
+
+            span{
+                cursor: pointer;
+            }
+
+            .tour-content{
+                position: relative;
+                padding-left: toRem(50);
+                padding-right: toRem(50);
+                width: 100%;
+                height: 100%;
+                background: rgba(20, 24, 44, 0.75);
+                box-shadow: 0px 130px 70px -90px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .slick-prev{
+                    position: absolute;
+                    right: -100px !important;
+                }
+    
+    
+                .tour-list{
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+
+                    @include respond(tablet){
+                        flex-direction: column;
+                    }
+    
+                    .img-tour{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        width: toRem(270);
+                        height: toRem(379);
+                        background: url(../../media/images/spencer-davis-naFHFLV5cqU-unsplash.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        margin-right: toRem(64);
+
+                        @include respond (tab-port){
+                            margin-right: toRem(32);
+                        }
+
+
+
+                        @include respond(tablet){
+                           width: 100%;
+                           height: toRem(320);
+                           margin-bottom: toRem(16);
+                           margin-right: 0;
+                        }
+
+                        @include respond(phone-mini){
+                            margin: 0;
+                        }
+                        
+    
+                        h3{
+                            font-family: "gilroy";
+                            font-style: normal;
+                            font-weight: 800;
+                            font-size: 36px;
+                            line-height: 40px;
+                            color: $color-5;
+                        }
+    
+                        
+                    }
+    
+                    .tour-contents{
+                        width: toRem(474);
+                        height: 100%;
+
+                        @include respond(tablet){
+                            width: 100%;
+                        }
+    
+                        p{
+                            font-family: 'inter', normal;
+                            font-weight: 400;
+                            font-size: toRem(16);
+                            line-height: toRem(24);
+                            &:first-child{
+                                color: $state-1;
+                            }
+    
+                            &:nth-child(4){
+                                color: #9FA1A7;
+                                margin-top: toRem(24);
+                            }
+                        }
+    
+                        h2{
+                            font-family: "gilroy";
+                            font-style: normal;
+                            font-weight: 800;
+                            font-size: 43px;
+                            line-height: 47px;
+                            color: $color-5;
+                            margin-bottom: toRem(6);
+
+                            @include respond(phone){
+                                font-size: 38px;
+                            }
+                        }
+    
+                        h6{
+                            font-family: 'Gilroy';
+                            font-style: normal;
+                            font-weight: 800;
+                            font-size: 22px;
+                            line-height: 24px;
+                            color: $color-5;
+                        }
+    
+                        .tour-btn{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: $primary;
+                            border: 2px solid #375FEB;
+                            border-radius: toRem(40);
+                            width: toRem(201);
+                            height: toRem(63);
+                            @include Small-title(lowercase);
+                            font-family: 'inter', normal;
+                            font-weight: 500;
+                            text-align: center;
+                            color: $color-5;
+                            margin-top: toRem(38);
+                            text-decoration: none;
+
+                            @include respond (tablet){
+                                margin: toRem(38) auto 0;
+                            }
+
+                            @include respond (phone-mini) {
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

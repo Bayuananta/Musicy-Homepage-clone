@@ -1,419 +1,205 @@
-// Just an example
-.home{
-    position: relative;
-    width: 100%;
+.bg-main{
+    position: absolute;
+    left: 0;
+    top: 0;
     height: toRem(809);
-    background:radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../../media/images/sam-moghadam-khamseh-mbx0GYZ0ng8-unsplash.jpg);
+    background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../../media/images/sam-moghadam-khamseh-mbx0GYZ0ng8-unsplash.jpg);
+    width: 100%;
+    z-index: -1;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    .title{
-        width: toRem(190);
-        height: toRem(284);
-        margin-top: toRem(110);
-        margin-left: auto;
-        margin-right: auto;
-        h1{
-            @include Big-Bold(uppercase);
-            @include respond (phone){
-                font-size: 80px;
-                line-height: 60px;
-            }
-
-            span{
-                font-family: 'Gilroy';
-                font-style: normal;
-                font-weight: 800;
-                color: $color-5;
-                margin: 0;
-
-                &:first-child{
-                    color: $primary;
-                }
-                &:nth-child(3){
-                    color: $primary;
-                }
-            }
-        }
-        p{
-            @include Medium-Upper(uppercase);
-            color: $color-5;
-            margin-top: 15px;
-        }
-    }
-    .nav{
-        position: relative;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        height: toRem(98);
-        align-items: center;
-        justify-items: center;
-        width: 100%;
-        
-        .button{
-            display: none;
-            color: $color-5;
-            padding-right: 2rem;
-            @include respond (tablet) {
-                display: block;
-            }
-        }
-        .close{
-            display: none;
-            color: $color-5;
-            padding-right: 2rem;
-        }
-
-        .platform{
-            display: flex;
-            border-right: 1px solid rgba(255, 255, 255, 0.2);
-            height: toRem(98);
-            width: toRem(222);
-            align-items: center;
-            justify-content: center;
-
-            @include respond (tablet) {
-                border-right: none;
-            }
-
-            a{
-                @include respond (tablet) {
-                    display: none
-                }
-            }
-
-            span{
-                @include p-1();
-            color: $color-5;
-            text-transform: capitalize;
-            margin-left: -40px;
-            display: none;
-            @include respond (tablet) {
-                display: block;
-            }
-            }
-            
-            .img-1{
-                margin-right: toRem(24);
-            }
-            .img-2{
-                margin-right: toRem(24);
-            }
-                        
-        }
-
-        .menus{
-            position: relative;
-            width: toRem(997);
-            height: toRem(98);
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-
-            @include respond (tablet) {
-                position: absolute;
-                width: 100%;
-                height: toRem(400);
-                display: none;
-                justify-content: center;
-                align-items: center;
-                padding-bottom: 150px;
-                flex-direction: column;
-                background: $color-1;
-                top: 87px;
-                left: 0;
-                z-index: 99;
-            }
-
-            .menus-main{
-                color: $color-5;
-                font-family: "gilroy";
-                font-style: normal;
-                font-weight: 800;
-                font-size: toRem(20);
-                line-height: toRem(22);
-                text-align: center;
-                
-
-                span{
-                    color: $primary;
-                }
-            }
-
-            a{
-                position: relative;
-                display: flex;
-                text-decoration: none;
-                color: #9FA1A7;
-                line-height: toRem(17.6);
-                text-transform: uppercase;
-                cursor: pointer;
-
-                @include respond (tablet) {
-                    margin-top: toRem(32);
-                }
-
-                &:first-child span{
-                    margin-left: 24px;
-                }
-                &:nth-child(2) span{
-                    margin-left: 9.5px;
-                }
-                &:nth-child(3) span{
-                    margin-left: 36.5px;
-                }
-                &:nth-child(5) span{
-                    margin-left: 16px;
-                }
-                &:hover span{
-                    opacity: 1;
-                }
-
-                div{
-                    color: #375FEB;
-                }
-
-                & span{
-                    position: absolute;
-                    height: 5px;
-                    width: 43px;
-                    margin-top: 57px;
-                    border-radius: 4.5px;
-                    background: #375FEB;
-                    opacity: 0;
-                    transition: 0.2s ease-out;
-                    
-                }
-            }           
-        }
-
-        .login-btn{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: toRem(222);
-            height: toRem(98);
-
-            @include respond (tablet) {
-                height: toRem(80);
-                margin: toRem(700) auto 0;
-                display: none;
-                z-index: 100;
-                border-radius: 5px;
-                width: toRem(160);
-            }
-
-            a{
-                font-family: "gilroy";
-                font-weight: 800;
-                font-size: toRem(18);
-                line-height: toRem(22);
-                text-align: center;
-                text-transform: uppercase;
-                color: $color-5;
-                text-decoration: none;
-                background-color: $primary;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                @include respond (tablet) {
-                    margin-left: -5.2rem;
-                }
-            }
-        }
-    }
-    .container{
-        position: relative;
-        max-width: toRem(1000);
-        width: 100%;
-        height: toRem(507);
-        margin: 0 auto;
-        margin-top: toRem(150);
-
-        @include respond(tablet){
-            height: 100%;
-        }
-
-        .tours{
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            height: 100%;
-            align-items: center;
-            position: relative;
-
-                .arrow__left{
-                   position: absolute;
-                   z-index: 10;
-                   left: 3%;
-                }
-
-                .arrow__right{
-                    position: absolute;
-                    z-index: 10;
-                    left: 97%;
-
-                    @include respond (tablet) {
-                        left: 94.5%;
-                    }
-                }
-            
-
-            span{
-                cursor: pointer;
-            }
-
-            .tour-content{
-                position: relative;
-                padding-left: toRem(50);
-                padding-right: toRem(50);
-                width: 100%;
-                height: 100%;
-                background: rgba(20, 24, 44, 0.75);
-                box-shadow: 0px 130px 70px -90px rgba(0, 0, 0, 0.25);
-                backdrop-filter: blur(10px);
-                -webkit-backdrop-filter: blur(10px);
-                border-radius: 5px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-    
-                .slick-prev{
-                    position: absolute;
-                    right: -100px !important;
-                }
-    
-    
-                .tour-list{
-                    display: flex;
-                    justify-items: center;
-                    align-items: center;
-
-                    @include respond(tablet){
-                        flex-direction: column;
-                    }
-    
-                    .img-tour{
-                        display: flex;
-                        justify-content: center;
-                        flex-direction: column;
-                        align-items: center;
-                        width: toRem(270);
-                        height: toRem(379);
-                        background: url(../../media/images/spencer-davis-naFHFLV5cqU-unsplash.jpg);
-                        background-size: cover;
-                        background-position: center;
-                        margin-right: toRem(64);
-
-                        @include respond (tab-port){
-                            margin-right: toRem(32);
-                        }
-
-
-
-                        @include respond(tablet){
-                           width: 100%;
-                           height: toRem(320);
-                           margin-bottom: toRem(16);
-                           margin-right: 0;
-                        }
-
-                        @include respond(phone-mini){
-                            margin: 0;
-                        }
-                        
-    
-                        h3{
-                            font-family: "gilroy";
-                            font-style: normal;
-                            font-weight: 800;
-                            font-size: 36px;
-                            line-height: 40px;
-                            color: $color-5;
-                        }
-    
-                        
-                    }
-    
-                    .tour-contents{
-                        width: toRem(474);
-                        height: 100%;
-
-                        @include respond(tablet){
-                            width: 100%;
-                        }
-    
-                        p{
-                            font-family: 'inter', normal;
-                            font-weight: 400;
-                            font-size: toRem(16);
-                            line-height: toRem(24);
-                            &:first-child{
-                                color: $state-1;
-                            }
-    
-                            &:nth-child(4){
-                                color: #9FA1A7;
-                                margin-top: toRem(24);
-                            }
-                        }
-    
-                        h2{
-                            font-family: "gilroy";
-                            font-style: normal;
-                            font-weight: 800;
-                            font-size: 43px;
-                            line-height: 47px;
-                            color: $color-5;
-                            margin-bottom: toRem(6);
-
-                            @include respond(phone){
-                                font-size: 38px;
-                            }
-                        }
-    
-                        h6{
-                            font-family: 'Gilroy';
-                            font-style: normal;
-                            font-weight: 800;
-                            font-size: 22px;
-                            line-height: 24px;
-                            color: $color-5;
-                        }
-    
-                        .tour-btn{
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            background-color: $primary;
-                            border: 2px solid #375FEB;
-                            border-radius: toRem(40);
-                            width: toRem(201);
-                            height: toRem(63);
-                            @include Small-title(lowercase);
-                            font-family: 'inter', normal;
-                            font-weight: 500;
-                            text-align: center;
-                            color: $color-5;
-                            margin-top: toRem(38);
-
-                            @include respond (tablet){
-                                margin: toRem(38) auto 0;
-                            }
-
-                            @include respond (phone-mini) {
-                                margin: 0 auto;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
+
+    .home{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        
+        .nav{
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            height: toRem(98);
+            align-items: center;
+            justify-items: center;
+            width: 100%;
+            
+            .button{
+                display: none;
+                color: $color-5;
+                padding-right: 2rem;
+                @include respond (tablet) {
+                    display: block;
+                }
+            }
+            .close{
+                display: none;
+                color: $color-5;
+                padding-right: 2rem;
+            }
+    
+            .platform{
+                display: flex;
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+                height: toRem(98);
+                width: toRem(222);
+                align-items: center;
+                justify-content: center;
+    
+                @include respond (tablet) {
+                    border-right: none;
+                }
+    
+                a{
+                    @include respond (tablet) {
+                        display: none
+                    }
+                }
+    
+                span{
+                    @include p-1();
+                color: $color-5;
+                text-transform: capitalize;
+                margin-left: -40px;
+                display: none;
+                @include respond (tablet) {
+                    display: block;
+                }
+                }
+                
+                .img-1{
+                    margin-right: toRem(24);
+                }
+                .img-2{
+                    margin-right: toRem(24);
+                }
+                            
+            }
+    
+            .menus{
+                position: relative;
+                width: toRem(997);
+                height: toRem(98);
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+    
+                @include respond (tablet) {
+                    position: absolute;
+                    width: 100%;
+                    height: toRem(400);
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 150px;
+                    flex-direction: column;
+                    background: $color-1;
+                    top: 87px;
+                    left: 0;
+                    z-index: 99;
+                }
+    
+                .menus-main{
+                    color: $color-5;
+                    font-family: "gilroy";
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: toRem(20);
+                    line-height: toRem(22);
+                    text-align: center;
+                    
+    
+                    span{
+                        color: $primary;
+                    }
+                }
+    
+                a{
+                    position: relative;
+                    display: flex;
+                    text-decoration: none;
+                    color: #9FA1A7;
+                    line-height: toRem(17.6);
+                    text-transform: uppercase;
+                    cursor: pointer;
+    
+                    @include respond (tablet) {
+                        margin-top: toRem(32);
+                    }
+    
+                    &:first-child span{
+                        margin-left: 24px;
+                    }
+                    &:nth-child(2) span{
+                        margin-left: 9.5px;
+                    }
+                    &:nth-child(3) span{
+                        margin-left: 36.5px;
+                    }
+                    &:nth-child(5) span{
+                        margin-left: 16px;
+                    }
+                    &:hover span{
+                        opacity: 1;
+                    }
+    
+                    div{
+                        color: #375FEB;
+                    }
+    
+                    & span{
+                        position: absolute;
+                        height: 5px;
+                        width: 43px;
+                        margin-top: 57px;
+                        border-radius: 4.5px;
+                        background: #375FEB;
+                        opacity: 0;
+                        transition: 0.2s ease-out;
+                        
+                    }
+                }           
+            }
+    
+            .login-btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: toRem(222);
+                height: toRem(98);
+    
+                @include respond (tablet) {
+                    height: toRem(80);
+                    margin: toRem(700) auto 0;
+                    display: none;
+                    z-index: 100;
+                    border-radius: 5px;
+                    width: toRem(160);
+                }
+    
+                a{
+                    font-family: "gilroy";
+                    font-weight: 800;
+                    font-size: toRem(18);
+                    line-height: toRem(22);
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: $color-5;
+                    text-decoration: none;
+                    background-color: $primary;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    @include respond (tablet) {
+                        margin-left: -5.2rem;
+                    }
+                }
+            }
+        }
+    }
