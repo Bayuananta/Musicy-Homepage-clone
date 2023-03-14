@@ -93,6 +93,10 @@
                         display: flex;
                         flex-wrap: wrap;
                     }
+
+                    @include respond(phone-smallest) {
+                        width: auto;
+                    }
                 }
 
                 p{
@@ -112,6 +116,10 @@
                             display: flex;
                             flex-wrap: wrap;
                             width: 20%;
+                        }
+
+                        @include respond(phone-smallest){
+                            display: none;
                         }
                     }
                 }

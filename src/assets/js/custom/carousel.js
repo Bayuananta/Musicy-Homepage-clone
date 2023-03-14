@@ -1,11 +1,24 @@
-$(document).ready(function(){
+const { arrow } = require("@popperjs/core");
 
+$(document).ready(function(){
+  
   $('.tour-content').slick({
+    arrows: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: $('#btn-prev-tour'),
     nextArrow: $('#btn-next-tour'),
+
+    responsive: [
+      {
+        breakpoint: 481,
+        settings: {
+          dots: true,
+          arrows: false,
+        }
+      },
+    ]
   });
 });
 

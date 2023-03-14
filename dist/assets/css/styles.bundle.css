@@ -12108,6 +12108,9 @@ footer .contact span {
 @media only screen and (max-width: 30em) {
   .album .btn {
     width: 100%;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 .album .btn .btn--primary {
@@ -12127,6 +12130,11 @@ footer .contact span {
   text-align: center;
   color: #FFFFFF;
 }
+@media only screen and (max-width: 30em) {
+  .album .btn .btn--primary {
+    width: 100%;
+  }
+}
 .album .btn .btn--secondary {
   display: flex;
   align-items: center;
@@ -12142,6 +12150,11 @@ footer .contact span {
   font-size: 1.125rem;
   text-align: center;
   color: #FFFFFF;
+}
+@media only screen and (max-width: 30em) {
+  .album .btn .btn--secondary {
+    width: 100%;
+  }
 }
 
 .song {
@@ -12238,6 +12251,11 @@ footer .contact span {
     flex-wrap: wrap;
   }
 }
+@media only screen and (max-width: 23.438em) {
+  .song .container-song .song__lists .song__list h5, .song .container-song .song__lists .song__list .h5 {
+    width: auto;
+  }
+}
 .song .container-song .song__lists .song__list p {
   font-family: "inter", normal;
   font-weight: 400;
@@ -12258,6 +12276,11 @@ footer .contact span {
     display: flex;
     flex-wrap: wrap;
     width: 20%;
+  }
+}
+@media only screen and (max-width: 23.438em) {
+  .song .container-song .song__lists .song__list p:nth-child(3) {
+    display: none;
   }
 }
 .song .container-song .song__lists .song__list .play__btn {
@@ -12825,22 +12848,31 @@ footer .contact span {
   align-items: center;
   position: relative;
 }
-.hero .container .tours .arrow__left {
+.hero .container .tours .arrows {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 30em) {
+  .hero .container .tours .arrows {
+    display: none;
+  }
+}
+.hero .container .tours .arrows .arrow__left {
   position: absolute;
   z-index: 10;
   left: 3%;
 }
-.hero .container .tours .arrow__right {
+.hero .container .tours .arrows .arrow__right {
   position: absolute;
   z-index: 10;
   left: 97%;
 }
 @media only screen and (max-width: 48em) {
-  .hero .container .tours .arrow__right {
+  .hero .container .tours .arrows .arrow__right {
     left: 94.5%;
   }
 }
-.hero .container .tours span {
+.hero .container .tours .arrows span {
   cursor: pointer;
 }
 .hero .container .tours .tour-content {
@@ -12857,6 +12889,47 @@ footer .contact span {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 30em) {
+  .hero .container .tours .tour-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.hero .container .tours .tour-content .slick-dots {
+  width: 100%;
+  position: absolute;
+  bottom: -5%;
+  left: 91%;
+  transform: translateX(-50%);
+  display: flex;
+}
+@media only screen and (max-width: 23.438em) {
+  .hero .container .tours .tour-content .slick-dots {
+    left: 85%;
+  }
+}
+.hero .container .tours .tour-content .slick-dots li {
+  margin: 0 4px;
+  overflow: hidden;
+  border: none;
+  border-radius: 4px;
+}
+.hero .container .tours .tour-content .slick-dots li button {
+  background-color: #9FA1A7;
+  width: 10px;
+  height: 10px;
+}
+.hero .container .tours .tour-content .slick-dots li button::before {
+  display: none;
+}
+.hero .container .tours .tour-content .slick-dots li button::after {
+  display: none;
+}
+.hero .container .tours .tour-content .slick-dots li.slick-active button {
+  background-color: #375FEB;
+  width: 10px;
+  height: 10px;
 }
 .hero .container .tours .tour-content .slick-prev {
   position: absolute;
@@ -12887,6 +12960,11 @@ footer .contact span {
 @media only screen and (max-width: 62em) {
   .hero .container .tours .tour-content .tour-list .img-tour {
     margin-right: 2rem;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .hero .container .tours .tour-content .tour-list .img-tour {
+    margin: 1rem auto;
   }
 }
 @media only screen and (max-width: 48em) {
@@ -12978,9 +13056,9 @@ footer .contact span {
     margin: 2.375rem auto 0;
   }
 }
-@media only screen and (max-width: 23.438em) {
+@media only screen and (max-width: 30em) {
   .hero .container .tours .tour-content .tour-list .tour-contents .tour-btn {
-    margin: 0 auto;
+    margin: 1rem auto 1rem;
   }
 }
 

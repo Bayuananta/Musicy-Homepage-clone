@@ -124,6 +124,9 @@
 
         @include respond (phone){
             width: 100%;
+            align-items: stretch;
+            flex-direction: column;
+            gap: toRem(16);
         }
 
         .btn--primary{
@@ -142,6 +145,11 @@
             font-size: toRem(18);
             text-align: center;
             color: $color-5;
+
+            @include respond (phone){
+                width: 100%;
+    
+            }
         }
 
         .btn--secondary{
@@ -159,6 +167,11 @@
             font-size: toRem(18);
             text-align: center;
             color: $color-5;
+
+            @include respond (phone){
+                width: 100%;
+    
+            }
         }
     }
 }
