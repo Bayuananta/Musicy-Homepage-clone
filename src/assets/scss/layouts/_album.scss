@@ -122,7 +122,7 @@
         margin: toRem(30) auto 0;
         width: toRem(434);
 
-        @include respond (phone){
+        @include respond (phone-mini){
             width: 100%;
             align-items: stretch;
             flex-direction: column;

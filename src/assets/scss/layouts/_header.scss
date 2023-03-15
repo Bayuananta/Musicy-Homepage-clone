@@ -11,6 +11,19 @@
     background-repeat: no-repeat;
 }
 
+.bg-bio{
+    background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../../media/images/band_all.png);
+    height: toRem(809);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
     .home{
         position: relative;
         width: 100%;
