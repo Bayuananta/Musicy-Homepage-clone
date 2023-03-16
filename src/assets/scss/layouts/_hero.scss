@@ -76,7 +76,7 @@
     .container{
         max-width: toRem(1000);
         width: 100%;
-        margin: 0 auto toRem(16);
+        margin: toRem(160) auto toRem(16);
 
         .band-history{
             position: relative;
@@ -161,7 +161,7 @@
                 .band-title{
                     position: absolute;
                     width: toRem(138);
-                    left: 51%;
+                    left: 53%;
                     top: 50%;
                     transform: translate(-50%, -50%);
                     h1{
@@ -238,6 +238,8 @@
                 width: 100%;
                 height: 100%;
 
+                
+
                 @include respond(phone) {
                     display: none;
                 }
@@ -250,7 +252,7 @@
                  .arrow__right{
                      position: absolute;
                      z-index: 10;
-                     left: 97%;
+                     left: 96%;
  
                      @include respond (tablet) {
                          left: 94.5%;
@@ -259,12 +261,23 @@
 
                  span{
                     cursor: pointer;
+                    
+                    img{
+                        transition: all .2s ease-in;
+                        padding: .625rem;
+                        border-radius: 50%;
+                        
+                        &:hover{
+                            background-color: $primary;
+                                                        
+                        }
+                    }   
                 }
             }
 
             .tour-content{
                 position: relative;
-                padding: toRem(64) toRem(50);
+                padding: toRem(64) toRem(64);
                 width: 100%;
                 height: 100%;
                 background: rgba(20, 24, 44, 0.75);
@@ -336,50 +349,74 @@
                     @include respond(tablet){
                         flex-direction: column;
                     }
+                    .content-left{
+                        position: relative;
+
+                        &:hover .img-tour{
+                            transform: scale(1.2);
+                            filter: blur(3px) brightness(80%);
+                        }
+
+                        &:hover .tour-caption{
+                            transform: scale(1);
+                        }
+
+                        .img-tour{
+                            width: toRem(270);
+                            height: toRem(379);
+                            background: url(../../media/images/spencer-davis-naFHFLV5cqU-unsplash.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            margin-right: toRem(64);
+                            transition: all .2s ease-out;
     
-                    .img-tour{
-                        display: flex;
-                        justify-content: center;
-                        flex-direction: column;
-                        align-items: center;
-                        width: toRem(270);
-                        height: toRem(379);
-                        background: url(../../media/images/spencer-davis-naFHFLV5cqU-unsplash.jpg);
-                        background-size: cover;
-                        background-position: center;
-                        margin-right: toRem(64);
-
-                        @include respond (tab-port){
-                            margin-right: toRem(32);
-                        }
-
-                        @include respond (phone){
-                            margin: 1rem auto;
-                        }
-
-
-
-                        @include respond(tablet){
-                           width: 100%;
-                           height: toRem(320);
-                           margin-bottom: toRem(16);
-                           margin-right: 0;
-                        }
-
-                        @include respond(phone-mini){
-                            margin: 0;
-                        }
-                        
+                            
     
-                        h3{
-                            font-family: "gilroy";
-                            font-style: normal;
-                            font-weight: 800;
-                            font-size: 36px;
-                            line-height: 40px;
-                            color: $color-5;
-                        }
+                            @include respond (tab-port){
+                                margin-right: toRem(32);
+                            }
     
+                            @include respond (phone){
+                                margin: 1rem auto;
+                            }
+    
+    
+    
+                            @include respond(tablet){
+                               width: 100%;
+                               height: toRem(320);
+                               margin-bottom: toRem(16);
+                               margin-right: 0;
+                            }
+    
+                            @include respond(phone-mini){
+                                margin: 0;
+                            }   
+
+                        }
+                            .tour-caption{
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            z-index: 10;
+                            left: 25%;
+                            top: 40%;
+                            transform: translate(-50%, -50%) scale(0);
+                            transition: all .2s ease-out;
+
+                            h3{
+                                font-family: "gilroy";
+                                font-style: normal;
+                                font-weight: 800;
+                                font-size: 36px;
+                                line-height: 40px;
+                                color: $color-5;
+                                
+                               
+                            }
+                        }
                         
                     }
     
@@ -445,6 +482,11 @@
                             color: $color-5;
                             margin-top: toRem(38);
                             text-decoration: none;
+                            transition: all .2s ease-in;
+
+                            &:hover{
+                                background-color: $color-1;
+                            }
 
                             @include respond (tablet){
                                 margin: toRem(38) auto 0;

@@ -53,6 +53,20 @@
                     position: absolute;
                     top: 16%;
 
+                    img{
+                        transition: all .2s ease-out;
+                        outline-offset: 1rem;
+                        &:hover{
+                            outline: 0.5rem solid $primary;
+                            transform: scale(1.05);
+                            box-shadow: 0 1.938rem 2.5rem rgba(0, 0, 0, 0.5);
+                            z-index: 20;
+                        }
+                        &:hover img:not(:hover){
+                            transform: scale(.9);
+                        }
+                    }
+
                     @include respond (tablet){
                         position: unset;
                         width: max-content;
@@ -63,6 +77,20 @@
                     position: absolute;
                     top: -5%;
                     left: 10%;
+
+                    img{
+                        transition: all .2s ease-out;
+                        outline-offset: 1rem;
+                        &:hover{
+                            outline: 0.5rem solid $primary;
+                            transform: scale(1.05);
+                            box-shadow: 0 1.938rem 2.5rem rgba(0, 0, 0, 0.5);
+                            z-index: 20;
+                        }
+                        &:hover &:not(:hover){
+                            transform: scale(.9);
+                        }
+                    }
 
                     @include respond (tablet){
                         position: unset;
@@ -77,6 +105,20 @@
                     width: toRem(200);
                     height: toRem(200);
                     border-radius: 5px;
+
+                    img{
+                        transition: all .2s ease-out;
+                        outline-offset: 1rem;
+                        &:hover{
+                            outline: 0.5rem solid $primary;
+                            transform: scale(1.05);
+                            box-shadow: 0 1.938rem 2.5rem rgba(0, 0, 0, 0.5);
+                            z-index: 20;
+                        }
+                        &:hover &:not(:hover){
+                            transform: scale(.9);
+                        }
+                    }
 
                     @include respond (tablet){
                         position: unset;
@@ -152,6 +194,12 @@
                 font-style: normal;
                 font-weight: 500;
                 color: $color-5;
+                text-decoration: none;
+                transition: all .2s ease-in-out ;
+
+                &:hover{
+                    background-color: $color-1;
+                }
 
                 @include respond (tablet){
                     margin: toRem(16) auto;

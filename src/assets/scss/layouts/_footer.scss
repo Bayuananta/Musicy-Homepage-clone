@@ -46,6 +46,11 @@ footer{
                     font-style: normal;
                     font-weight: 500;
                     border: 2px solid #375FEB;
+                    transition: all .2s ease-out;
+
+                    &:hover{
+                        background-color: $color-1;
+                    }
 
                     @include respond(tab-mini){
                         padding: toRem(16);
@@ -118,6 +123,67 @@ footer{
             align-items: center;
             height: toRem(24);
             margin-bottom: toRem(64);
+
+            .logo_plat-1{
+                    background-color: $color-5;
+                    mask: url(../../media/images/Apple.svg) no-repeat center;
+                    -webkit-mask: url(../../media/images/Apple.svg) no-repeat center;
+                    height: toRem(21.25);
+                    width: toRem(18);
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        background-color: $secondary;
+                        transform: translateY(-2px);
+                    }
+            }
+            .logo_plat-2{
+                    background-color: $color-5;
+                    mask: url(../../media/images/Spotify.svg) no-repeat center;
+                    -webkit-mask: url(../../media/images/Spotify.svg) no-repeat center;
+                    height: toRem(21.25);
+                    width: 1.3rem;
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        background-color: $state-2;
+                        transform: translateY(-2px);
+                    }
+            }
+            .logo_plat-3{
+                    background-color: $color-5;
+                    mask: url(../../media/images/Youtube.svg) no-repeat center;
+                    -webkit-mask: url(../../media/images/Youtube.svg) no-repeat center;
+                    height: toRem(21.25);
+                    width: 1.5rem;
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        background-color: $state-4;
+                        transform: translateY(-2px);
+                    }
+            }
+            .logo_plat-4{
+                    background-color: $color-5;
+                    mask: url(../../media/images/Instagram.svg) no-repeat center;
+                    -webkit-mask: url(../../media/images/Instagram.svg) no-repeat center;
+                    height: toRem(21.25);
+                    width: 1.5rem;
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        background-color: #FFB6C1;
+                        transform: translateY(-2px);
+                    }
+            }
+            .logo_plat-5{
+                    background-color: $color-5;
+                    mask: url(../../media/images/Facebook.svg) no-repeat center;
+                    -webkit-mask: url(../../media/images/Facebook.svg) no-repeat center;
+                    height: toRem(21.25);
+                    width: toRem(18);
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        background-color: $primary;
+                        transform: translateY(-2px);
+                    }
+            }
         }
     
         p{

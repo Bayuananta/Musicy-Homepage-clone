@@ -47,6 +47,7 @@ $('.videos__lists').slick({
 });
 
 $('.album__cover').slick({
+  infinite: false,
   centerMode: true,
   centerPadding: '250px',
   slidesToShow: 3,

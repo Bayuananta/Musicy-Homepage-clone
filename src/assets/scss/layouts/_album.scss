@@ -39,6 +39,17 @@
             margin-left: toRem(20);
             margin-right: toRem(20);
             cursor: pointer;
+
+            img{
+                padding: .6rem;
+                transition: all .2s ease-out;
+                border-radius: 50%;
+                background-color: none;
+
+                &:hover{
+                    background-color: $primary;
+                }
+            }
         }
     }
 
@@ -97,6 +108,10 @@
             opacity: 0;
             transition: all linear .2s;
 
+            @include respond (tab-mini) {
+                opacity: 1;
+            }
+
             h3{
                 font-family: "gilroy", normal;
                 font-weight: 800;
@@ -145,6 +160,12 @@
             font-size: toRem(18);
             text-align: center;
             color: $color-5;
+            transition: all .2s ease-in;
+            text-decoration: none;
+
+            &:hover{
+                background-color: $color-1;
+            }
 
             @include respond (phone){
                 width: 100%;
@@ -167,6 +188,12 @@
             font-size: toRem(18);
             text-align: center;
             color: $color-5;
+            transition: all .2s ease-out;
+            text-decoration: none;
+
+            &:hover{
+                background-color: $primary;
+            }
 
             @include respond (phone){
                 width: 100%;
