@@ -4,6 +4,10 @@
     width: 100%;
     height: toRem(1382);
 
+    @include respond (phone) {
+        height: 100%;
+    }
+
     .container{
         position: relative;
         max-width: toRem(1000);
@@ -28,6 +32,10 @@
             color: $color-5;
             margin: 0 auto;
             border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+
+            @include respond (phone) {
+                font-size: 36px;
+            }
         }
 
         .video__list{
@@ -37,6 +45,10 @@
             justify-content: center;
             width: 100%;
             height: toRem(1078);
+
+            @include respond (phone) {
+                height: 100%;
+            }
 
             .video__list--sub{
                 position: relative;
@@ -239,7 +251,8 @@
                         }
 
                         @include respond(phone){
-                            font-size: 25px;
+                            font-size: 18px;
+                            line-height: 27px;
                         }
                     }
 

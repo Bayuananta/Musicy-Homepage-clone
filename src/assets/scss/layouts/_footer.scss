@@ -1,9 +1,5 @@
 footer{
     height: max-content;
-    
-    @include respond(tab-mini){
-        padding-top: 26rem;
-    }
 
     .subscribe{
         background: $color-2;

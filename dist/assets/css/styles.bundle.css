@@ -11713,6 +11713,7 @@ textarea.form-control-lg {
 @media only screen and (max-width: 48em) {
   .nav .platform {
     border-right: none;
+    width: 7.875rem;
   }
 }
 @media only screen and (max-width: 48em) {
@@ -11897,11 +11898,6 @@ textarea.form-control-lg {
 footer {
   height: -moz-max-content;
   height: max-content;
-}
-@media only screen and (max-width: 36em) {
-  footer {
-    padding-top: 26rem;
-  }
 }
 footer .subscribe {
   background: #13172B;
@@ -12156,7 +12152,7 @@ footer .contact span {
   width: 100%;
   justify-items: center;
 }
-.album .album__cover .slick-center .album__content-title {
+.album .album__cover .slick-active.slick-center .album__content-title {
   opacity: 1;
 }
 @media only screen and (max-width: 48em) {
@@ -12393,7 +12389,7 @@ footer .contact span {
     flex-wrap: wrap;
   }
 }
-@media only screen and (max-width: 23.438em) {
+@media only screen and (max-width: 20em) {
   .song .container-song .song__lists .song__list h5, .song .container-song .song__lists .song__list .h5 {
     width: auto;
   }
@@ -12420,7 +12416,7 @@ footer .contact span {
     width: 20%;
   }
 }
-@media only screen and (max-width: 23.438em) {
+@media only screen and (max-width: 20em) {
   .song .container-song .song__lists .song__list p:nth-child(3) {
     display: none;
   }
@@ -12453,6 +12449,11 @@ footer .contact span {
   width: 100%;
   height: 86.375rem;
 }
+@media only screen and (max-width: 30em) {
+  .videos {
+    height: 100%;
+  }
+}
 .videos .container {
   position: relative;
   max-width: 62.5rem;
@@ -12478,6 +12479,11 @@ footer .contact span {
   margin: 0 auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.13);
 }
+@media only screen and (max-width: 30em) {
+  .videos .container .title {
+    font-size: 36px;
+  }
+}
 .videos .container .video__list {
   position: relative;
   display: flex;
@@ -12485,6 +12491,11 @@ footer .contact span {
   justify-content: center;
   width: 100%;
   height: 67.375rem;
+}
+@media only screen and (max-width: 30em) {
+  .videos .container .video__list {
+    height: 100%;
+  }
 }
 .videos .container .video__list .video__list--sub {
   position: relative;
@@ -12676,7 +12687,8 @@ footer .contact span {
 }
 @media only screen and (max-width: 30em) {
   .videos .container .video__list .video__list--main .about__video h4, .videos .container .video__list .video__list--main .about__video .h4 {
-    font-size: 25px;
+    font-size: 18px;
+    line-height: 27px;
   }
 }
 .videos .container .video__list .video__list--main .about__video p {
@@ -12776,6 +12788,11 @@ footer .contact span {
   width: 100%;
   height: 59.1875rem;
 }
+@media only screen and (max-width: 30em) {
+  .media {
+    height: 100%;
+  }
+}
 .media .container {
   padding: 0 2rem;
   position: relative;
@@ -12785,13 +12802,17 @@ footer .contact span {
   max-width: 62.5rem;
   width: 100%;
   height: 34.5625rem;
-  padding-top: 13rem;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 30em) {
+  .media .container {
+    height: 100%;
+  }
 }
 @media only screen and (max-width: 48em) {
   .media .container {
-    padding-top: 0;
     flex-direction: column;
-    padding-bottom: 13rem;
+    padding-bottom: 2rem;
   }
 }
 .media .container .media__gallery {
@@ -12820,7 +12841,7 @@ footer .contact span {
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 23.438em) {
+@media only screen and (max-width: 20em) {
   .media .container .media__gallery .media__gallery--img {
     width: 80%;
   }
@@ -12838,6 +12859,12 @@ footer .contact span {
   transform: scale(1.05);
   box-shadow: 0 1.938rem 2.5rem rgba(0, 0, 0, 0.5);
   z-index: 20;
+}
+@media only screen and (max-width: 30em) {
+  .media .container .media__gallery .media__gallery--img .media__gallery--img-1 img:hover {
+    outline: none;
+    transform: none;
+  }
 }
 .media .container .media__gallery .media__gallery--img .media__gallery--img-1 img:hover img:not(:hover) {
   transform: scale(0.9);
@@ -12863,6 +12890,12 @@ footer .contact span {
   transform: scale(1.05);
   box-shadow: 0 1.938rem 2.5rem rgba(0, 0, 0, 0.5);
   z-index: 20;
+}
+@media only screen and (max-width: 30em) {
+  .media .container .media__gallery .media__gallery--img .media__gallery--img-2 img:hover {
+    outline: none;
+    transform: none;
+  }
 }
 .media .container .media__gallery .media__gallery--img .media__gallery--img-2 img:hover .media .container .media__gallery .media__gallery--img .media__gallery--img-2 img:not(:hover) {
   transform: scale(0.9);
@@ -12891,6 +12924,12 @@ footer .contact span {
   transform: scale(1.05);
   box-shadow: 0 1.938rem 2.5rem rgba(0, 0, 0, 0.5);
   z-index: 20;
+}
+@media only screen and (max-width: 30em) {
+  .media .container .media__gallery .media__gallery--img .media__gallery--img-3 img:hover {
+    outline: none;
+    transform: none;
+  }
 }
 .media .container .media__gallery .media__gallery--img .media__gallery--img-3 img:hover .media .container .media__gallery .media__gallery--img .media__gallery--img-3 img:not(:hover) {
   transform: scale(0.9);
@@ -12988,6 +13027,11 @@ footer .contact span {
   width: 100%;
   height: 100%;
 }
+@media only screen and (max-width: 62em) {
+  .hero {
+    padding: 0 2rem;
+  }
+}
 .hero .bio__title {
   max-width: 62.5rem;
   margin: 15.625rem auto;
@@ -13001,10 +13045,15 @@ footer .contact span {
   color: #375FEB;
   text-align: center;
 }
+@media only screen and (max-width: 36em) {
+  .hero .bio__title h1, .hero .bio__title .h1 {
+    font-size: 82px;
+    line-height: 60px;
+  }
+}
 @media only screen and (max-width: 30em) {
   .hero .bio__title h1, .hero .bio__title .h1 {
-    font-size: 80px;
-    line-height: 60px;
+    font-size: 68px;
   }
 }
 .hero .bio__title h1 span, .hero .bio__title .h1 span {
@@ -13018,6 +13067,11 @@ footer .contact span {
   margin-top: 1.875rem;
   text-align: center;
   font-weight: 300;
+}
+@media only screen and (max-width: 30em) {
+  .hero .bio__title p {
+    font-size: 18px;
+  }
 }
 .hero .title {
   width: 11.875rem;
@@ -13072,29 +13126,94 @@ footer .contact span {
   flex-direction: column;
   padding: 0 1rem;
 }
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history {
+    padding: 0;
+  }
+}
 .hero .container .band-history .band-history__sub {
   display: flex;
   gap: 1rem;
+  width: 100%;
+  flex-direction: row;
+}
+@media only screen and (max-width: 30em) {
+  .hero .container .band-history .band-history__sub {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history .band-history__sub {
+    gap: 0;
+  }
 }
 .hero .container .band-history .band-history__sub .band-history__sub-box {
   border: 0.970902px solid #375FEB;
   border-radius: 5px;
   width: 13.75rem;
   height: 13.625rem;
-  gap: 1rem;
+}
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box {
+    width: 100%;
+    height: 100%;
+  }
 }
 .hero .container .band-history .band-history__sub .band-history__sub-box:first-child {
   margin-top: 6.25rem;
 }
+@media only screen and (max-width: 36em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box:first-child {
+    margin-top: 0;
+  }
+}
 .hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(2) {
   margin-top: 11.5rem;
+}
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(2) {
+    margin-top: 8.5rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(2) {
+    margin-top: 2rem;
+  }
+}
+.hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(3) {
+  margin-top: 0;
+}
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(3) {
+    margin-top: 10.5rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(3) {
+    margin-top: 4rem;
+  }
 }
 .hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(4) {
   margin-top: 6.875rem;
 }
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(4) {
+    margin-top: 12.5rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(4) {
+    margin-top: 6rem;
+  }
+}
 .hero .container .band-history .band-history__sub .band-history__sub-box .box-content {
   width: 10.3125rem;
   margin: 0 auto;
+}
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box .box-content {
+    width: 100%;
+  }
 }
 .hero .container .band-history .band-history__sub .band-history__sub-box .main-content {
   padding-top: 1.5625rem;
@@ -13102,6 +13221,11 @@ footer .contact span {
   flex-direction: row;
   align-items: center;
   margin-bottom: 0.5rem;
+}
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box .main-content {
+    flex-direction: column;
+  }
 }
 .hero .container .band-history .band-history__sub .band-history__sub-box .main-content h2, .hero .container .band-history .band-history__sub .band-history__sub-box .main-content .h2 {
   text-transform: uppercase;
@@ -13121,6 +13245,17 @@ footer .contact span {
   color: #FFFFFF;
   margin-bottom: 0 !important;
 }
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box .main-content p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box .sub-content {
+    width: 12.5rem;
+    margin: 0 auto;
+  }
+}
 .hero .container .band-history .band-history__sub .band-history__sub-box .sub-content p {
   font-family: "Inter";
   font-style: normal;
@@ -13128,7 +13263,12 @@ footer .contact span {
   font-size: 14px;
   line-height: 21px;
   color: #9FA1A7;
-  margin: 1rem 0 0 !important;
+  margin: 1rem 0.625rem 0 !important;
+}
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box .sub-content p {
+    text-align: center;
+  }
 }
 .hero .container .band-history .band-history__main {
   position: relative;
@@ -13137,12 +13277,29 @@ footer .contact span {
   grid-gap: 1.25rem;
   padding: 1.25rem 0;
 }
+@media only screen and (max-width: 36em) {
+  .hero .container .band-history .band-history__main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
 .hero .container .band-history .band-history__main .band-title {
   position: absolute;
   width: 8.625rem;
-  left: 53%;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history .band-history__main .band-title {
+    top: 100%;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .hero .container .band-history .band-history__main .band-title {
+    top: 35%;
+  }
 }
 .hero .container .band-history .band-history__main .band-title h1, .hero .container .band-history .band-history__main .band-title .h1 {
   font-size: 72px;
@@ -13176,10 +13333,14 @@ footer .contact span {
   display: block;
 }
 .hero .container .band-history .band-history__main .content-right {
-  display: flex;
+  width: 100%;
   margin-top: 5rem;
   align-items: center;
-  flex-direction: column;
+}
+@media only screen and (max-width: 36em) {
+  .hero .container .band-history .band-history__main .content-right {
+    margin-top: 1.25rem;
+  }
 }
 .hero .container .band-history .band-history__main .content-right h2, .hero .container .band-history .band-history__main .content-right .h2 {
   width: 18.75rem;
@@ -13191,6 +13352,12 @@ footer .contact span {
   color: #FFFFFF;
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history .band-history__main .content-right h2, .hero .container .band-history .band-history__main .content-right .h2 {
+    width: 100%;
+    margin: 0;
+  }
+}
 .hero .container .band-history .band-history__main .content-right p {
   width: 18.75rem;
   margin: 0 auto;
@@ -13199,6 +13366,12 @@ footer .contact span {
   font-family: "Inter", normal;
   font-weight: 400;
   color: #9FA1A7;
+}
+@media only screen and (max-width: 48em) {
+  .hero .container .band-history .band-history__main .content-right p {
+    width: 100%;
+    margin: 0;
+  }
 }
 .hero .container .tours {
   display: flex;
@@ -13343,10 +13516,15 @@ footer .contact span {
 }
 @media only screen and (max-width: 48em) {
   .hero .container .tours .tour-content .tour-list .content-left .img-tour {
-    width: 100%;
+    width: 33.375rem;
     height: 20rem;
     margin-bottom: 1rem;
     margin-right: 0;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .hero .container .tours .tour-content .tour-list .content-left .img-tour {
+    width: 22.375rem;
   }
 }
 @media only screen and (max-width: 23.438em) {
@@ -13459,6 +13637,16 @@ footer .contact span {
   background-position: center center;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 62em) {
+  .personel {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (max-width: 23.438em) {
+  .personel {
+    height: 100%;
+  }
+}
 .personel .container {
   max-width: 62.5rem;
   width: 100%;
@@ -13488,11 +13676,32 @@ footer .contact span {
   width: 100%;
   gap: 2.375rem;
 }
+@media only screen and (max-width: 36em) {
+  .personel .container .personel__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 23.438em) {
+  .personel .container .personel__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .personel .container .personel__list .personel__list--content:nth-child(2) {
   padding-top: 6.25rem;
 }
+@media only screen and (max-width: 36em) {
+  .personel .container .personel__list .personel__list--content:nth-child(2) {
+    padding-top: 0;
+  }
+}
 .personel .container .personel__list .personel__list--content:nth-child(4) {
   padding-top: 6.25rem;
+}
+@media only screen and (max-width: 36em) {
+  .personel .container .personel__list .personel__list--content:nth-child(4) {
+    padding-top: 0;
+  }
 }
 .personel .container .personel__list .personel__list--content img {
   -o-object-fit: cover;
@@ -13524,6 +13733,11 @@ footer .contact span {
   flex-direction: column;
   justify-content: center;
 }
+@media only screen and (max-width: 36em) {
+  .personel .container .personel__content {
+    margin-top: 6rem;
+  }
+}
 .personel .container .personel__content h3, .personel .container .personel__content .h3 {
   width: 100%;
   font-family: "Gilroy";
@@ -13542,6 +13756,11 @@ footer .contact span {
   text-align: center;
   color: #9FA1A7;
   margin: 0 auto;
+}
+@media only screen and (max-width: 62em) {
+  .personel .container .personel__content p {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.bundle.css.map*/

@@ -3,6 +3,10 @@
     width: 100%;
     height: 100%;
 
+    @include respond (tab-port) {
+        padding: 0 toRem(32);
+    }
+
     .bio__title{
         max-width: toRem(1000);
         margin: toRem(250) auto;
@@ -13,9 +17,13 @@
             font-weight: 800;
             color: $primary;
             text-align: center;
-            @include respond (phone){
-                font-size: 80px;
+            @include respond (tab-mini){
+                font-size: 82px;
                 line-height: 60px;
+            }
+
+            @include respond (phone) {
+                font-size: 68px;
             }
 
             span{
@@ -30,7 +38,13 @@
             margin-top: toRem(30);
             text-align: center;
             font-weight: 300;
+
+            @include respond (phone) {
+                font-size: 18px;
+            }
         }
+
+        
     }
 
     .title{
@@ -84,32 +98,85 @@
             flex-direction: column;
             padding: 0 toRem(16);
 
+            @include respond (tablet) {
+                padding: 0;
+            }
+
             .band-history__sub{
                 display: flex;
                 gap: toRem(16);
+                width: 100%;
+                flex-direction: row;
+
+                @include respond (phone) {
+                    flex-direction: column;
+                }
+
+                @include respond (tablet) {
+                    gap: 0;
+                }
 
                 .band-history__sub-box{
                     border: 0.970902px solid #375FEB;
                     border-radius: 5px;
                     width: toRem(220);
                     height: toRem(218);
-                    gap: toRem(16);
+
+                    @include respond (tablet) {
+                        width: 100%;
+                        height: 100%;
+                    }
 
                     &:first-child{
                         margin-top: toRem(100);
+                        
+                        @include respond (tab-mini) {
+                            margin-top: 0;
+                        }
                     }
 
                     &:nth-child(2){
                         margin-top: toRem(184);
+
+                        @include respond (tablet) {
+                            margin-top: 8.5rem;
+                        }
+
+                        @include respond (tab-mini) {
+                            margin-top: 2rem;
+                        }
                     }
 
+                    &:nth-child(3){
+                        margin-top: 0;
+
+                        @include respond (tablet) {
+                            margin-top: 10.5rem;
+                        }
+
+                        @include respond (tab-mini) {
+                            margin-top: 4rem;
+                        }
+                    }
                     &:nth-child(4){
                         margin-top: toRem(110);
+
+                        @include respond (tablet) {
+                            margin-top: 12.5rem;
+                        }
+
+                        @include respond (tab-mini) {
+                            margin-top: 6rem;
+                        }
                     }
 
                     .box-content{
                         width: toRem(165);
                         margin: 0 auto;
+
+                        @include respond (tablet) {
+                            width: 100%;
+                        }
                     }
 
                     .main-content{
@@ -118,6 +185,10 @@
                         flex-direction: row;
                         align-items: center;
                         margin-bottom: toRem(8);
+
+                        @include respond (tablet) {
+                            flex-direction: column;
+                        }
 
                         h2{
                             text-transform: uppercase;
@@ -135,17 +206,30 @@
                             @include Medium-Upper(uppercase);
                             color: $color-5;
                             margin-bottom: 0 !important;
+
+                            @include respond (tablet) {
+                                text-align: center;
+                            }
                         }
                         
                     }
                     .sub-content{
+                        @include respond (phone){
+                            width: toRem(200);
+                            margin: 0 auto;
+                        }
+
                         p{
                             font-family: 'Inter';
                             font-style: normal;
                             font-weight: 400;
                             @include p-5();
                             color: #9FA1A7;
-                            margin: toRem(16) 0 0!important;
+                            margin: toRem(16) toRem(10) 0!important;
+
+                            @include respond (tablet) {
+                                text-align: center;
+                            }
                         }
                     }
                 }       
@@ -158,12 +242,26 @@
                 grid-gap: toRem(20);
                 padding: toRem(20) 0;
 
+                @include respond (tab-mini){
+                   display: flex;
+                   flex-direction: column;
+                   gap: toRem(20);
+                }
+
                 .band-title{
                     position: absolute;
                     width: toRem(138);
-                    left: 53%;
+                    left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
+
+                    @include respond (tablet) {
+                        top: 100%
+                    }
+
+                    @include respond (tab-mini) {
+                        top: 35%
+                    }
                     h1{
                         @include Large(uppercase);
                         font-weight: 800;
@@ -194,14 +292,17 @@
                     img{
                         object-fit: cover;
                         display: block;
-                    }
                 }
+            }
 
                 .content-right{
-                    display: flex;
+                    width: 100%;
                     margin-top: toRem(80);
                     align-items: center;
-                    flex-direction: column;
+
+                    @include respond (tab-mini) {
+                        margin-top: toRem(20);
+                    }
 
                     h2{
                         width: toRem(300);
@@ -212,6 +313,11 @@
                         line-height: 47px;
                         color: $color-5;
                         margin-bottom: toRem(32);
+
+                        @include respond (tablet) {
+                            width: 100%;
+                            margin: 0;
+                        }
                     }
 
                     p{
@@ -221,6 +327,11 @@
                         font-family: 'Inter', normal;
                         font-weight: 400;
                         color: #9FA1A7;
+
+                        @include respond (tablet) {
+                            width: 100%;
+                            margin: 0;
+                        }
                     }
                 }
             }
@@ -375,6 +486,8 @@
                             @include respond (tab-port){
                                 margin-right: toRem(32);
                             }
+                            
+                            
     
                             @include respond (phone){
                                 margin: 1rem auto;
@@ -383,10 +496,14 @@
     
     
                             @include respond(tablet){
-                               width: 100%;
+                                width: toRem(534);
                                height: toRem(320);
                                margin-bottom: toRem(16);
                                margin-right: 0;
+                            }
+
+                            @include respond (tab-mini) {
+                                width: toRem(358);
                             }
     
                             @include respond(phone-mini){

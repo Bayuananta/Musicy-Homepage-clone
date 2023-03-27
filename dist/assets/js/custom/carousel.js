@@ -3360,7 +3360,7 @@ $('.videos__lists').slick({
 });
 
 $('.album__cover').slick({
-  infinite: false,
+  infinite: true,
   centerMode: true,
   centerPadding: '250px',
   slidesToShow: 3,
@@ -3372,7 +3372,7 @@ $('.album__cover').slick({
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '170px',
+        centerPadding: '250px',
         slidesToShow: 3
       }
     },

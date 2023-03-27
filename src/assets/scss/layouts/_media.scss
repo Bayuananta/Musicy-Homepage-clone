@@ -4,6 +4,10 @@
     width: 100%;
     height: toRem(947);
 
+    @include respond (phone) {
+        height: 100%
+    }
+
     .container{
         padding: 0 toRem(32);
         position: relative;
@@ -13,12 +17,15 @@
         max-width: toRem(1000);
         width: 100%;
         height: toRem(553);
-        padding-top: 13rem;
+        padding-top: 2rem;
+
+        @include respond (phone) {
+           height: 100%;
+        }
 
         @include respond(tablet){
-            padding-top: 0;
             flex-direction: column;
-            padding-bottom: 13rem;
+            padding-bottom: 2rem;
         }
 
         .media__gallery{
@@ -61,6 +68,12 @@
                             transform: scale(1.05);
                             box-shadow: 0 1.938rem 2.5rem rgba(0, 0, 0, 0.5);
                             z-index: 20;
+
+                            @include respond (phone) {
+                                outline: none;
+                                transform: none;
+                               
+                            }
                         }
                         &:hover img:not(:hover){
                             transform: scale(.9);
@@ -86,6 +99,11 @@
                             transform: scale(1.05);
                             box-shadow: 0 1.938rem 2.5rem rgba(0, 0, 0, 0.5);
                             z-index: 20;
+
+                            @include respond (phone) {
+                                 outline: none;
+                                 transform: none;
+                             }
                         }
                         &:hover &:not(:hover){
                             transform: scale(.9);
@@ -114,6 +132,11 @@
                             transform: scale(1.05);
                             box-shadow: 0 1.938rem 2.5rem rgba(0, 0, 0, 0.5);
                             z-index: 20;
+
+                            @include respond (phone) {
+                                outline: none;
+                                transform: none;
+                            }
                         }
                         &:hover &:not(:hover){
                             transform: scale(.9);
