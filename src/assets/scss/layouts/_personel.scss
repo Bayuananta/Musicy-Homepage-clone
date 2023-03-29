@@ -5,8 +5,15 @@
     background-position: center center;
     background-repeat: no-repeat;
 
+    
+
     @include respond (tab-port) {
-        padding: 0 toRem(32);
+        padding: toRem(16) toRem(32);
+    }
+
+    @include respond (tab-mini) {
+        height: 100%;
+        padding: toRem(16) toRem(16);
     }
 
     @include respond (phone-mini) {
@@ -53,6 +60,10 @@
 
             @include respond (phone-mini) {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include respond (phone-smallest) {
+                gap: toRem(16);
             }
 
             .personel__list--content{

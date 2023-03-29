@@ -7,6 +7,341 @@
         padding: 0 toRem(32);
     }
 
+    .container-booking{
+        background: radial-gradient(50% 50% at 50% 50%, rgba(38, 79, 226, 0.3) 0%, rgba(38, 79, 226, 0.2) 30.21%, rgba(38, 79, 226, 0) 100%);
+        height: toRem(1066);
+        width: 100%;
+        padding-top: toRem(160);
+    }
+
+    .booking{
+        max-width: toRem(1000);
+        width: 100%;
+        // height: toRem(657);
+        background: rgba(20, 24, 44, 0.75);
+        box-shadow: 0px 50px 200px -20px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+
+        .booking-btn{
+            width: toRem(305);
+            margin-left: auto;
+            background: $primary;
+            border-radius: 23.5px;
+            padding: toRem(16) 0;
+            @include Small-title(lowercase);
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            text-align: center;
+            color: $color-5;
+            outline: none;
+            border: none;
+        }
+
+        .booking-form{
+            max-width: toRem(410);
+            width: 100%;
+            padding: toRem(59) 0;
+            margin: 0 auto;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: toRem(14);
+            
+
+            .form__name,
+            .form__email,
+            .form__phone,
+            .form__address,
+            .form__date{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p{
+                    @include p-4();
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    color: $color-5;
+                }
+
+                input::placeholder{
+                    padding: toRem(8) toRem(16);
+                    @include p-4();
+                    font-style: normal;
+                    font-weight: 400;
+                    color: #9FA1A7;   
+                }
+            }
+
+            .form__ticket{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: toRem(16);
+            }
+
+            .ticket-radio{
+                display: flex;
+                justify-content: space-between;
+                width: toRem(305);
+
+                /* The container */
+                .content {
+                    display: block;
+                    position: relative;
+                    padding-left: 35px;
+                    margin-bottom: 12px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+
+                    p{
+                        @include p-4();
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        color: $color-5;
+                    }
+                }
+                
+                /* Hide the browser's default radio button */
+                .content input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                
+                /* Create a custom radio button */
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 25px;
+                    width: 25px;
+                    background-color: rgba(20, 24, 44, 0.75);
+                    outline: 2px solid $color-4;
+                    border-radius: 50%;
+                    transition: all .2s ease-in;
+                }
+                
+                /* On mouse-over, add a grey background color */
+                .content:hover input ~ .checkmark {
+                    background-color: $primary;
+                    outline: 2px solid $primary;
+                }
+                
+                /* When the radio button is checked, add a blue background */
+                .content input:checked ~ .checkmark {
+                    background-color: $primary;
+                    outline: 2px solid $primary;
+                }
+                
+                /* Create the indicator (the dot/circle - hidden when not checked) */
+                .checkmark:after {
+                    content: "\2713";
+                    display: none;
+                    color: $color-5;
+                    position: absolute;
+                }
+                
+                /* Show the indicator (dot/circle) when checked */
+                .content input:checked ~ .checkmark:after {
+                    display: block;
+                }
+                
+                /* Style the indicator (dot/circle) */
+                .content .checkmark:after {
+                    top: 0px;
+                    left: 6px;
+                    width: 5px;
+                    height: 5px;
+                    color: $color-5;
+                }
+            }
+                
+            }
+
+            .form__input{
+                background: #101324;
+                border: 1px solid $color-4;
+                border-radius: 4.3367px;
+                width: toRem(305);
+                transition: all .2s ease-in;
+                
+                &:hover,
+                &:active{
+                    border: 1px solid #3B94E7;
+                }
+            }
+
+            .form__ticket{
+                p{
+                    @include p-4();
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    color: $color-5;
+                }
+            }
+
+            .input-date{
+                display: flex;
+                justify-content: space-between;
+                width: toRem(305);
+            }
+
+            .form__input-date{
+                background: #101324;
+                border: 1px solid $color-4;
+                border-radius: 4.3367px;
+                width: toRem(91);
+                transition: all .2s ease-in;
+                
+                &:hover,
+                &:active{
+                    border: 1px solid #3B94E7;
+                }
+            }
+
+        .booking-title{
+            h4{
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 800;
+                line-height: 33px;
+                color: $color-5;
+            }
+
+            p{
+                @include p-4();
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                color: #9FA1A7; 
+            }
+        }
+
+        .booking-content{
+            width: toRem(420);
+            background: linear-gradient(180deg, rgba(16, 19, 36, 0.43) 0%, #101324 100%), url(../../media/images/booking-bg.jpg);
+            border-radius: 10px 0px 0px 10px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .booking-contents{
+            width: toRem(277);
+            margin: 0 auto;
+
+            h2{
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 800;
+                line-height: 47px;
+                color: $color-5;
+            }
+
+            p{
+                &:nth-child(3){
+                    @include p-3();
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    color: $color-5;
+                    margin-bottom: toRem(24);
+                }
+
+                &:nth-child(4){
+                    @include p-4();
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    color: #9FA1A7;
+                }
+            }
+        }
+
+        .booking-date{
+            width: toRem(145);
+            background-color: #F74141;
+            border-radius: 4px;
+            text-align: center;
+
+            p{
+            @include p-5();
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            color: $color-5;
+            }
+        }
+    }
+
+    .countdown{
+        width: toRem(640);
+        margin: 0 auto;
+
+        h3{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            line-height: 40px;
+            text-align: center;
+            color: $color-5;
+        }
+
+        .countdown-time{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: toRem(32);
+            margin-bottom: toRem(80);
+        }
+
+        .countdown-day,
+        .countdown-hours,
+        .countdown-minutes,
+        .countdown-seconds{
+            display: flex;
+            flex-direction: column;
+
+            p{
+                &:first-child{
+                    @include Large(uppercase);
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 300;
+                    text-align: center;
+                    color: $color-5;
+                }
+                
+                &:nth-child(2){
+                    @include Small-Upper(uppercase);
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 300;
+                    text-align: center;
+                    color: $color-5;
+                }
+            }
+        }
+    }
+
     .bio__title{
         max-width: toRem(1000);
         margin: toRem(250) auto;
@@ -24,6 +359,14 @@
 
             @include respond (phone) {
                 font-size: 68px;
+            }
+
+            @include respond (phone-mini) {
+                font-size: 52px;
+            }
+
+            @include respond (phone-smallest) {
+                font-size: 44px;
             }
 
             span{
@@ -157,6 +500,10 @@
                         @include respond (tab-mini) {
                             margin-top: 4rem;
                         }
+
+                        @include respond (phone-smallest) {
+                            margin-top: 2rem;
+                        }
                     }
                     &:nth-child(4){
                         margin-top: toRem(110);
@@ -167,6 +514,10 @@
 
                         @include respond (tab-mini) {
                             margin-top: 6rem;
+                        }
+
+                        @include respond (phone-smallest) {
+                            margin-top: 2rem;
                         }
                     }
 

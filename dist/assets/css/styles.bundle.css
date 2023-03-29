@@ -11673,6 +11673,19 @@ textarea.form-control-lg {
   z-index: -1;
 }
 
+.bg-event {
+  background: radial-gradient(50% 36.13% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../media/images/bg-event.jpg);
+  height: 50.5625rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
 .nav {
   position: relative;
   display: flex;
@@ -13032,6 +13045,324 @@ footer .contact span {
     padding: 0 2rem;
   }
 }
+.hero .container-booking {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(38, 79, 226, 0.3) 0%, rgba(38, 79, 226, 0.2) 30.21%, rgba(38, 79, 226, 0) 100%);
+  height: 66.625rem;
+  width: 100%;
+  padding-top: 10rem;
+}
+.hero .booking {
+  max-width: 62.5rem;
+  width: 100%;
+  background: rgba(20, 24, 44, 0.75);
+  box-shadow: 0px 50px 200px -20px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.hero .booking .booking-btn {
+  width: 19.0625rem;
+  margin-left: auto;
+  background: #375FEB;
+  border-radius: 23.5px;
+  padding: 1rem 0;
+  font-size: 18px;
+  text-transform: lowercase;
+  line-height: 21.6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
+}
+.hero .booking .booking-form {
+  max-width: 25.625rem;
+  width: 100%;
+  padding: 3.6875rem 0;
+  margin: 0 auto;
+}
+.hero .booking .form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+.hero .booking .form .form__name,
+.hero .booking .form .form__email,
+.hero .booking .form .form__phone,
+.hero .booking .form .form__address,
+.hero .booking .form .form__date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hero .booking .form .form__name p,
+.hero .booking .form .form__email p,
+.hero .booking .form .form__phone p,
+.hero .booking .form .form__address p,
+.hero .booking .form .form__date p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.hero .booking .form .form__name input::-moz-placeholder, .hero .booking .form .form__email input::-moz-placeholder, .hero .booking .form .form__phone input::-moz-placeholder, .hero .booking .form .form__address input::-moz-placeholder, .hero .booking .form .form__date input::-moz-placeholder {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  color: #9FA1A7;
+}
+.hero .booking .form .form__name input::placeholder,
+.hero .booking .form .form__email input::placeholder,
+.hero .booking .form .form__phone input::placeholder,
+.hero .booking .form .form__address input::placeholder,
+.hero .booking .form .form__date input::placeholder {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  color: #9FA1A7;
+}
+.hero .booking .form .form__ticket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.hero .booking .form .ticket-radio {
+  display: flex;
+  justify-content: space-between;
+  width: 19.0625rem;
+  /* The container */
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+.hero .booking .form .ticket-radio .content {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.hero .booking .form .ticket-radio .content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.hero .booking .form .ticket-radio .content input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.hero .booking .form .ticket-radio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgba(20, 24, 44, 0.75);
+  outline: 2px solid #404250;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+.hero .booking .form .ticket-radio .content:hover input ~ .checkmark {
+  background-color: #375FEB;
+  outline: 2px solid #375FEB;
+}
+.hero .booking .form .ticket-radio .content input:checked ~ .checkmark {
+  background-color: #375FEB;
+  outline: 2px solid #375FEB;
+}
+.hero .booking .form .ticket-radio .checkmark:after {
+  content: "✓";
+  display: none;
+  color: #FFFFFF;
+  position: absolute;
+}
+.hero .booking .form .ticket-radio .content input:checked ~ .checkmark:after {
+  display: block;
+}
+.hero .booking .form .ticket-radio .content .checkmark:after {
+  top: 0px;
+  left: 6px;
+  width: 5px;
+  height: 5px;
+  color: #FFFFFF;
+}
+.hero .booking .form__input {
+  background: #101324;
+  border: 1px solid #404250;
+  border-radius: 4.3367px;
+  width: 19.0625rem;
+  transition: all 0.2s ease-in;
+}
+.hero .booking .form__input:hover, .hero .booking .form__input:active {
+  border: 1px solid #3B94E7;
+}
+.hero .booking .form__ticket p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.hero .booking .input-date {
+  display: flex;
+  justify-content: space-between;
+  width: 19.0625rem;
+}
+.hero .booking .form__input-date {
+  background: #101324;
+  border: 1px solid #404250;
+  border-radius: 4.3367px;
+  width: 5.6875rem;
+  transition: all 0.2s ease-in;
+}
+.hero .booking .form__input-date:hover, .hero .booking .form__input-date:active {
+  border: 1px solid #3B94E7;
+}
+.hero .booking .booking-title h4, .hero .booking .booking-title .h4 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+.hero .booking .booking-title p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #9FA1A7;
+}
+.hero .booking .booking-content {
+  width: 26.25rem;
+  background: linear-gradient(180deg, rgba(16, 19, 36, 0.43) 0%, #101324 100%), url(../media/images/booking-bg.jpg);
+  border-radius: 10px 0px 0px 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero .booking .booking-contents {
+  width: 17.3125rem;
+  margin: 0 auto;
+}
+.hero .booking .booking-contents h2, .hero .booking .booking-contents .h2 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 47px;
+  color: #FFFFFF;
+}
+.hero .booking .booking-contents p:nth-child(3) {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+}
+.hero .booking .booking-contents p:nth-child(4) {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #9FA1A7;
+}
+.hero .booking .booking-date {
+  width: 9.0625rem;
+  background-color: #F74141;
+  border-radius: 4px;
+  text-align: center;
+}
+.hero .booking .booking-date p {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.hero .countdown {
+  width: 40rem;
+  margin: 0 auto;
+}
+.hero .countdown h3, .hero .countdown .h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.hero .countdown .countdown-time {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.hero .countdown .countdown-day,
+.hero .countdown .countdown-hours,
+.hero .countdown .countdown-minutes,
+.hero .countdown .countdown-seconds {
+  display: flex;
+  flex-direction: column;
+}
+.hero .countdown .countdown-day p:first-child,
+.hero .countdown .countdown-hours p:first-child,
+.hero .countdown .countdown-minutes p:first-child,
+.hero .countdown .countdown-seconds p:first-child {
+  font-size: 72px;
+  text-transform: uppercase;
+  line-height: 60px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  color: #FFFFFF;
+}
+.hero .countdown .countdown-day p:nth-child(2),
+.hero .countdown .countdown-hours p:nth-child(2),
+.hero .countdown .countdown-minutes p:nth-child(2),
+.hero .countdown .countdown-seconds p:nth-child(2) {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 17.6px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  color: #FFFFFF;
+}
 .hero .bio__title {
   max-width: 62.5rem;
   margin: 15.625rem auto;
@@ -13054,6 +13385,16 @@ footer .contact span {
 @media only screen and (max-width: 30em) {
   .hero .bio__title h1, .hero .bio__title .h1 {
     font-size: 68px;
+  }
+}
+@media only screen and (max-width: 23.438em) {
+  .hero .bio__title h1, .hero .bio__title .h1 {
+    font-size: 52px;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .hero .bio__title h1, .hero .bio__title .h1 {
+    font-size: 44px;
   }
 }
 .hero .bio__title h1 span, .hero .bio__title .h1 span {
@@ -13193,6 +13534,11 @@ footer .contact span {
     margin-top: 4rem;
   }
 }
+@media only screen and (max-width: 20em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(3) {
+    margin-top: 2rem;
+  }
+}
 .hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(4) {
   margin-top: 6.875rem;
 }
@@ -13204,6 +13550,11 @@ footer .contact span {
 @media only screen and (max-width: 36em) {
   .hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(4) {
     margin-top: 6rem;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .hero .container .band-history .band-history__sub .band-history__sub-box:nth-child(4) {
+    margin-top: 2rem;
   }
 }
 .hero .container .band-history .band-history__sub .band-history__sub-box .box-content {
@@ -13639,7 +13990,13 @@ footer .contact span {
 }
 @media only screen and (max-width: 62em) {
   .personel {
-    padding: 0 2rem;
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .personel {
+    height: 100%;
+    padding: 1rem 1rem;
   }
 }
 @media only screen and (max-width: 23.438em) {
@@ -13685,6 +14042,11 @@ footer .contact span {
 @media only screen and (max-width: 23.438em) {
   .personel .container .personel__list {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 20em) {
+  .personel .container .personel__list {
+    gap: 1rem;
   }
 }
 .personel .container .personel__list .personel__list--content:nth-child(2) {
@@ -13761,6 +14123,48 @@ footer .contact span {
   .personel .container .personel__content p {
     width: 100%;
   }
+}
+
+.highlight {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.highlight .concert__content p:nth-child(2) {
+  margin-bottom: 0 !important;
+}
+.highlight .highlight__content,
+.highlight .concert__content {
+  width: 100%;
+  background-color: #101324;
+  border: 1px solid #212433;
+  border-radius: 3px;
+}
+.highlight .highlight__content h5, .highlight .highlight__content .h5,
+.highlight .concert__content h5,
+.highlight .concert__content .h5 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: 2rem 3rem;
+}
+.highlight .highlight__content p,
+.highlight .concert__content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #9FA1A7;
+  padding: 0 3rem 2rem;
+}
+.highlight .container {
+  max-width: 62.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
 }
 
 /*# sourceMappingURL=styles.bundle.css.map*/

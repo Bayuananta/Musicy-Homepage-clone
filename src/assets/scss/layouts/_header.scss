@@ -23,6 +23,19 @@
     top: 0;
     z-index: -1;
 }
+
+.bg-event{
+    background: radial-gradient(50% 36.13% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../../media/images/bg-event.jpg);
+    height: toRem(809);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
         
         .nav{
             position: relative;
