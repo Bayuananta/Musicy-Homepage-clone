@@ -11735,8 +11735,8 @@ textarea.form-control-lg {
   }
 }
 .nav .platform span {
-  font-size: 22px;
-  line-height: 33px;
+  font-size: 22px !important;
+  line-height: 33px !important;
   color: #FFFFFF;
   text-transform: capitalize;
   margin-left: -40px;
@@ -11986,8 +11986,8 @@ footer .subscribe .container .subscribe__input .subscribe__input--type {
   }
 }
 footer .subscribe .container .subscribe__input .subscribe__input--type input {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   width: 22.8125rem;
   border: none;
   outline: none;
@@ -12089,8 +12089,8 @@ footer .contact p {
   align-items: center;
   width: 100%;
   padding-top: 1.5rem;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -12098,8 +12098,8 @@ footer .contact p {
   color: #9FA1A7;
 }
 footer .contact span {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 14px !important;
+  line-height: 21px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -12591,8 +12591,8 @@ footer .contact span {
   width: 100%;
 }
 .videos .container .video__list .video__list--sub .videos__lists .video__content p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -12705,8 +12705,8 @@ footer .contact span {
   }
 }
 .videos .container .video__list .video__list--main .about__video p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -12993,8 +12993,8 @@ footer .contact span {
   margin-bottom: 2rem;
 }
 .media .container .media__content p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -13104,8 +13104,8 @@ footer .contact span {
 .hero .booking .form .form__phone p,
 .hero .booking .form .form__address p,
 .hero .booking .form .form__date p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -13113,8 +13113,8 @@ footer .contact span {
 }
 .hero .booking .form .form__name input::-moz-placeholder, .hero .booking .form .form__email input::-moz-placeholder, .hero .booking .form .form__phone input::-moz-placeholder, .hero .booking .form .form__address input::-moz-placeholder, .hero .booking .form .form__date input::-moz-placeholder {
   padding: 0.5rem 1rem;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-style: normal;
   font-weight: 400;
   color: #9FA1A7;
@@ -13125,8 +13125,8 @@ footer .contact span {
 .hero .booking .form .form__address input::placeholder,
 .hero .booking .form .form__date input::placeholder {
   padding: 0.5rem 1rem;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-style: normal;
   font-weight: 400;
   color: #9FA1A7;
@@ -13162,8 +13162,8 @@ footer .contact span {
   user-select: none;
 }
 .hero .booking .form .ticket-radio .content p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -13220,8 +13220,8 @@ footer .contact span {
   border: 1px solid #3B94E7;
 }
 .hero .booking .form__ticket p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -13250,8 +13250,8 @@ footer .contact span {
   color: #FFFFFF;
 }
 .hero .booking .booking-title p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -13281,8 +13281,8 @@ footer .contact span {
   color: #FFFFFF;
 }
 .hero .booking .booking-contents p:nth-child(3) {
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 18px !important;
+  line-height: 27px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -13290,8 +13290,8 @@ footer .contact span {
   margin-bottom: 1.5rem;
 }
 .hero .booking .booking-contents p:nth-child(4) {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -13304,8 +13304,8 @@ footer .contact span {
   text-align: center;
 }
 .hero .booking .booking-date p {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 14px !important;
+  line-height: 21px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -13611,8 +13611,8 @@ footer .contact span {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 14px !important;
+  line-height: 21px !important;
   color: #9FA1A7;
   margin: 1rem 0.625rem 0 !important;
 }
@@ -13712,8 +13712,8 @@ footer .contact span {
 .hero .container .band-history .band-history__main .content-right p {
   width: 18.75rem;
   margin: 0 auto;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter", normal;
   font-weight: 400;
   color: #9FA1A7;
@@ -14081,8 +14081,8 @@ footer .contact span {
   margin: 1rem 0 0;
 }
 .personel .container .personel__list .personel__list--content p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -14110,8 +14110,8 @@ footer .contact span {
 }
 .personel .container .personel__content p {
   width: 53.0625rem;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -14151,8 +14151,8 @@ footer .contact span {
 }
 .highlight .highlight__content p,
 .highlight .concert__content p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -14165,6 +14165,246 @@ footer .contact span {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
+}
+
+.artists {
+  width: 100%;
+  padding-bottom: 6.375rem;
+}
+.artists h2, .artists .h2 {
+  max-width: 62.5rem;
+  width: 100%;
+  height: 5.9375rem;
+  margin: 0 auto;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  color: #FFFFFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+.artists .artists__featured {
+  width: 100%;
+  background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0) 0%, rgba(16, 19, 36, 0.28) 32.81%, rgba(16, 19, 36, 0.87) 100%), url(../media/images/bg-event.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 36.1875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.artists .artist {
+  width: 12.5rem;
+  height: 13.5625rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.artists .artist h5, .artists .artist .h5 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-left: 1.1875rem;
+}
+.artists .artist p {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-left: 1.1875rem;
+}
+.artists .artist--1 {
+  background: url(../media/images/artist1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.artists .artist--2 {
+  background: url(../media/images/artist2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.artists .artist--3 {
+  background: url(../media/images/artist3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.artists .artist--4 {
+  background: url(../media/images/artist4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.artists .artist--5 {
+  background: url(../media/images/artist5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.artists .artist--6 {
+  background: url(../media/images/artist6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.artists .artist--7 {
+  background: url(../media/images/artist7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.artists .artist--8 {
+  background: url(../media/images/artist8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.artists .artist--9 {
+  background: url(../media/images/artist9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.artists .artist--10 {
+  background: url(../media/images/artist10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container__artists {
+  max-width: 62.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.events {
+  width: 100%;
+  max-width: 62.5rem;
+  width: 100%;
+  margin: 0 auto 3.5rem;
+}
+.events .events__btn {
+  display: block;
+  width: 12.5625rem;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: lowercase;
+  line-height: 21.6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 1.25rem 1.5rem;
+  border: 2px solid #375FEB;
+  border-radius: 40px;
+  transition: all 0.2s ease-in;
+}
+.events .events__btn:hover {
+  background-color: #375FEB;
+}
+.events .events__title {
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  height: 10.375rem;
+}
+.events .events__title h3, .events .events__title .h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 1rem !important;
+}
+.events .events__title p {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #9FA1A7;
+  margin-bottom: 0 !important;
+}
+.events .events__schedule {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.events .events__schedule h6, .events .events__schedule .h6 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 24px;
+  margin-top: 0.5rem;
+  margin-bottom: 1.9375rem;
+  font-size: 22px;
+}
+.events .events__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+.events .events__content p {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  color: #15A8FB;
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+.events .events__content h5, .events .events__content .h5 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.events .events__content .events__content--1 {
+  background: url(../media/images/event1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.events .events__content .events__content--2 {
+  background: url(../media/images/event2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.events .events__content .events__content--3 {
+  background: url(../media/images/event3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.events .events__content .events__content--4 {
+  background: url(../media/images/event4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.events .events__content .event {
+  width: 14.6875rem;
+  height: 18.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=styles.bundle.css.map*/

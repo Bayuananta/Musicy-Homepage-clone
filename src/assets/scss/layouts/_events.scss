@@ -1,0 +1,128 @@
+.events{
+    width: 100%;
+    max-width: toRem(1000);
+    width: 100%;
+    margin: 0 auto toRem(56);
+
+    .events__btn{
+        display: block;
+        width: toRem(201);
+        margin: 0 auto;
+        text-decoration: none;
+        @include Small-title(lowercase);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        text-align: center;
+        color: $color-5;
+        padding: toRem(20) toRem(24);
+        border: 2px solid #375FEB;
+        border-radius: 40px;
+        transition: all .2s ease-in;
+
+        &:hover{
+            background-color: $primary;
+        }
+    }
+
+    .events__title{
+        margin: 0 auto;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+        height: toRem(166);
+
+        h3{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            line-height: 40px;
+            text-align: center;
+            color: $color-5;
+            margin-bottom: toRem(16) !important;
+        }
+
+        p{
+            @include p-4();
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            text-align: center;
+            color: #9FA1A7;
+            margin-bottom: 0 !important;
+        }
+    } 
+
+    .events__schedule{
+        width: 100%;
+        margin-bottom: toRem(64);
+        
+        h6{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            color: $color-5;
+            line-height: 24px;
+            margin-top: toRem(8);
+            margin-bottom: toRem(31);
+            font-size: 22px;
+        }
+    }
+
+    .events__content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: toRem(20);
+
+        p{
+            @include p-4();
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            color: #15A8FB;
+            text-align: center;
+            margin-bottom: 0 !important;
+        }
+
+        h5{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            line-height: 28px;
+            color: $color-5;
+            text-align: center;
+        }
+
+        .events__content--1{
+            background: url(../../media/images/event1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .events__content--2{
+            background: url(../../media/images/event2.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .events__content--3{
+            background: url(../../media/images/event3.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .events__content--4{
+            background: url(../../media/images/event4.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .event{
+            width: toRem(235);
+            height: toRem(290);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.artists{
+    width: 100%;
+    padding-bottom: toRem(102);
+
+    h2{
+        max-width: toRem(1000);
+        width: 100%;
+        height: toRem(95);
+        margin: 0 auto;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 800;
+        text-align: center;
+        color: $color-5 ;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+    }
+
+    .artists__featured{
+        width: 100%;
+        background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0) 0%, rgba(16, 19, 36, 0.28) 32.81%, rgba(16, 19, 36, 0.87) 100%), url(../../media/images/bg-event.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: toRem(579);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .artist{
+        width: toRem(200);
+        height: toRem(217);
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        h5{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            line-height: 28px;
+            color: $color-5;
+            margin-left: toRem(19)
+        }
+
+        p{
+            @include p-4();
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            color: $color-5;
+            margin-left: toRem(19);
+        }
+    }
+
+    .artist--1{
+        background: url(../../media/images/artist1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .artist--2{
+        background: url(../../media/images/artist2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .artist--3{
+        background: url(../../media/images/artist3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .artist--4{
+        background: url(../../media/images/artist4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .artist--5{
+        background: url(../../media/images/artist5.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .artist--6{
+        background: url(../../media/images/artist6.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .artist--7{
+        background: url(../../media/images/artist7.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .artist--8{
+        background: url(../../media/images/artist8.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .artist--9{
+        background: url(../../media/images/artist9.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .artist--10{
+        background: url(../../media/images/artist10.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.container__artists{
+    max-width: toRem(1000);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
