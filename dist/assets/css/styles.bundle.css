@@ -13051,6 +13051,12 @@ footer .contact span {
   width: 100%;
   padding-top: 10rem;
 }
+@media only screen and (max-width: 48em) {
+  .hero .container-booking {
+    height: auto;
+    margin-bottom: 2rem !important;
+  }
+}
 .hero .booking {
   max-width: 62.5rem;
   width: 100%;
@@ -13061,6 +13067,11 @@ footer .contact span {
   border-radius: 10px;
   display: flex;
   flex-direction: row;
+}
+@media only screen and (max-width: 48em) {
+  .hero .booking {
+    flex-direction: column;
+  }
 }
 .hero .booking .booking-btn {
   width: 19.0625rem;
@@ -13077,13 +13088,27 @@ footer .contact span {
   text-align: center;
   color: #FFFFFF;
   outline: none;
-  border: none;
+  border: 2px solid #375FEB;
+  transition: all 0.2s ease-in;
+}
+.hero .booking .booking-btn:hover {
+  background-color: #101324;
+}
+@media only screen and (max-width: 30em) {
+  .hero .booking .booking-btn {
+    width: 100%;
+  }
 }
 .hero .booking .booking-form {
   max-width: 25.625rem;
   width: 100%;
   padding: 3.6875rem 0;
   margin: 0 auto;
+}
+@media only screen and (max-width: 48em) {
+  .hero .booking .booking-form {
+    padding: 3.6875rem 1rem;
+  }
 }
 .hero .booking .form {
   display: flex;
@@ -13098,6 +13123,24 @@ footer .contact span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media only screen and (max-width: 30em) {
+  .hero .booking .form .form__name,
+  .hero .booking .form .form__email,
+  .hero .booking .form .form__phone,
+  .hero .booking .form .form__address,
+  .hero .booking .form .form__date {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .hero .booking .form .form__name,
+  .hero .booking .form .form__email,
+  .hero .booking .form .form__phone,
+  .hero .booking .form .form__address,
+  .hero .booking .form .form__date {
+    flex-direction: column;
+  }
 }
 .hero .booking .form .form__name p,
 .hero .booking .form .form__email p,
@@ -13137,6 +13180,11 @@ footer .contact span {
   justify-content: space-between;
   margin-top: 1rem;
 }
+@media only screen and (max-width: 30em) {
+  .hero .booking .form .form__ticket {
+    flex-direction: column;
+  }
+}
 .hero .booking .form .ticket-radio {
   display: flex;
   justify-content: space-between;
@@ -13149,6 +13197,16 @@ footer .contact span {
   /* Create the indicator (the dot/circle - hidden when not checked) */
   /* Show the indicator (dot/circle) when checked */
   /* Style the indicator (dot/circle) */
+}
+@media only screen and (max-width: 30em) {
+  .hero .booking .form .ticket-radio {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .hero .booking .form .ticket-radio {
+    flex-direction: column;
+  }
 }
 .hero .booking .form .ticket-radio .content {
   display: block;
@@ -13216,6 +13274,16 @@ footer .contact span {
   width: 19.0625rem;
   transition: all 0.2s ease-in;
 }
+@media only screen and (max-width: 30em) {
+  .hero .booking .form__input {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .hero .booking .form__input {
+    padding: 0.25rem 0;
+  }
+}
 .hero .booking .form__input:hover, .hero .booking .form__input:active {
   border: 1px solid #3B94E7;
 }
@@ -13232,12 +13300,33 @@ footer .contact span {
   justify-content: space-between;
   width: 19.0625rem;
 }
+@media only screen and (max-width: 48em) {
+  .hero .booking .input-date {
+    gap: 0.625rem;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .hero .booking .input-date {
+    flex-direction: column;
+    width: auto;
+  }
+}
 .hero .booking .form__input-date {
   background: #101324;
   border: 1px solid #404250;
   border-radius: 4.3367px;
   width: 5.6875rem;
   transition: all 0.2s ease-in;
+}
+@media only screen and (max-width: 48em) {
+  .hero .booking .form__input-date {
+    padding: 0.25rem 0;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .hero .booking .form__input-date {
+    width: auto;
+  }
 }
 .hero .booking .form__input-date:hover, .hero .booking .form__input-date:active {
   border: 1px solid #3B94E7;
@@ -13249,6 +13338,11 @@ footer .contact span {
   line-height: 33px;
   color: #FFFFFF;
 }
+@media only screen and (max-width: 48em) {
+  .hero .booking .booking-title h4, .hero .booking .booking-title .h4 {
+    text-align: center;
+  }
+}
 .hero .booking .booking-title p {
   font-size: 16px !important;
   line-height: 24px !important;
@@ -13257,6 +13351,11 @@ footer .contact span {
   font-weight: 400;
   line-height: 24px;
   color: #9FA1A7;
+}
+@media only screen and (max-width: 48em) {
+  .hero .booking .booking-title p {
+    text-align: center;
+  }
 }
 .hero .booking .booking-content {
   width: 26.25rem;
@@ -13269,9 +13368,20 @@ footer .contact span {
   flex-direction: column;
   justify-content: center;
 }
+@media only screen and (max-width: 48em) {
+  .hero .booking .booking-content {
+    width: auto;
+    padding: 1rem 1rem;
+  }
+}
 .hero .booking .booking-contents {
   width: 17.3125rem;
   margin: 0 auto;
+}
+@media only screen and (max-width: 48em) {
+  .hero .booking .booking-contents {
+    width: auto;
+  }
 }
 .hero .booking .booking-contents h2, .hero .booking .booking-contents .h2 {
   font-family: "Gilroy";
@@ -13279,6 +13389,14 @@ footer .contact span {
   font-weight: 800;
   line-height: 47px;
   color: #FFFFFF;
+}
+@media only screen and (max-width: 48em) {
+  .hero .booking .booking-contents h2, .hero .booking .booking-contents .h2 {
+    line-height: 30px;
+    width: 6.75rem;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 .hero .booking .booking-contents p:nth-child(3) {
   font-size: 18px !important;
@@ -13288,6 +13406,11 @@ footer .contact span {
   font-weight: 400;
   color: #FFFFFF;
   margin-bottom: 1.5rem;
+}
+@media only screen and (max-width: 48em) {
+  .hero .booking .booking-contents p:nth-child(3) {
+    margin-bottom: 1rem;
+  }
 }
 .hero .booking .booking-contents p:nth-child(4) {
   font-size: 16px !important;
@@ -13303,6 +13426,11 @@ footer .contact span {
   border-radius: 4px;
   text-align: center;
 }
+@media only screen and (max-width: 48em) {
+  .hero .booking .booking-date {
+    margin: 0 auto;
+  }
+}
 .hero .booking .booking-date p {
   font-size: 14px !important;
   line-height: 21px !important;
@@ -13312,7 +13440,8 @@ footer .contact span {
   color: #FFFFFF;
 }
 .hero .countdown {
-  width: 40rem;
+  max-width: 40rem;
+  width: 100%;
   margin: 0 auto;
 }
 .hero .countdown h3, .hero .countdown .h3 {
@@ -13329,6 +13458,12 @@ footer .contact span {
   justify-content: space-around;
   margin-top: 2rem;
   margin-bottom: 5rem;
+}
+@media only screen and (max-width: 30em) {
+  .hero .countdown .countdown-time {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .hero .countdown .countdown-day,
 .hero .countdown .countdown-hours,
@@ -13362,6 +13497,41 @@ footer .contact span {
   font-weight: 300;
   text-align: center;
   color: #FFFFFF;
+}
+.hero .hero__title {
+  max-width: 62.5rem;
+  margin: 15.625rem auto;
+}
+.hero .hero__title h1, .hero .hero__title .h1 {
+  font-size: 94px;
+  text-transform: uppercase;
+  line-height: 70.4px;
+  font-style: "Gilroy", normal;
+  font-weight: 800;
+  color: #375FEB;
+  text-align: center;
+}
+@media only screen and (max-width: 23.438em) {
+  .hero .hero__title h1, .hero .hero__title .h1 {
+    font-size: 78px;
+  }
+}
+.hero .hero__title h1 span, .hero .hero__title .h1 span {
+  color: #FFFFFF !important;
+}
+.hero .hero__title p {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 1.875rem;
+  text-align: center;
+  font-weight: 300;
+}
+@media only screen and (max-width: 30em) {
+  .hero .hero__title p {
+    font-size: 18px;
+  }
 }
 .hero .bio__title {
   max-width: 62.5rem;
@@ -14194,8 +14364,12 @@ footer .contact span {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 36em) {
+  .artists .artists__featured {
+    height: auto;
+  }
+}
 .artists .artist {
-  width: 12.5rem;
   height: 13.5625rem;
   display: flex;
   justify-content: flex-end;
@@ -14278,6 +14452,26 @@ footer .contact span {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (max-width: 36em) {
+  .artists .artist--10 {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (max-width: 23.438em) {
+  .artists .artist--10 {
+    grid-column: 2/3;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .artists .artist--10 h5, .artists .artist--10 .h5 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .artists .artist--10 p {
+    text-align: center;
+  }
+}
 
 .container__artists {
   max-width: 62.5rem;
@@ -14285,12 +14479,27 @@ footer .contact span {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
+@media only screen and (max-width: 36em) {
+  .container__artists {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 23.438em) {
+  .container__artists {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .events {
   width: 100%;
   max-width: 62.5rem;
   width: 100%;
-  margin: 0 auto 3.5rem;
+  margin: 0 auto 8.75rem;
+}
+@media only screen and (max-width: 62em) {
+  .events {
+    padding: 0 1rem;
+  }
 }
 .events .events__btn {
   display: block;
@@ -14318,6 +14527,12 @@ footer .contact span {
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.13);
   height: 10.375rem;
+}
+@media only screen and (max-width: 23.438em) {
+  .events .events__title {
+    height: -moz-min-content;
+    height: min-content;
+  }
 }
 .events .events__title h3, .events .events__title .h3 {
   font-family: "Gilroy";
@@ -14356,6 +14571,16 @@ footer .contact span {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
+}
+@media only screen and (max-width: 36em) {
+  .events .events__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 20em) {
+  .events .events__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .events .events__content p {
   font-size: 16px !important;
@@ -14400,11 +14625,143 @@ footer .contact span {
   background-repeat: no-repeat;
 }
 .events .events__content .event {
-  width: 14.6875rem;
   height: 18.125rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.gallery {
+  width: 100%;
+  margin-bottom: 6.5625rem;
+}
+@media only screen and (max-width: 48em) {
+  .gallery {
+    padding: 0 1rem;
+  }
+}
+.gallery .gallery__title {
+  max-width: 62.5rem;
+  width: 100%;
+  height: 5.9375rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  margin: 0 auto 5rem;
+}
+.gallery .gallery__title h2, .gallery .gallery__title .h2 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 47px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.gallery .gallery__content {
+  max-width: 62.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.gallery .gallery__content h4, .gallery .gallery__content .h4 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 33px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.gallery .gallery__content p {
+  max-width: 54.6875rem;
+  width: 100%;
+  margin: 1.375rem auto 4rem;
+  font-size: 14px !important;
+  line-height: 21px !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #9FA1A7;
+}
+.gallery .gallery__img {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+}
+@media only screen and (max-width: 48em) {
+  .gallery .gallery__img {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 23.438em) {
+  .gallery .gallery__img {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.gallery .gallery__image {
+  height: 13.5625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 0.2s ease-in;
+}
+.gallery .gallery__image p {
+  font-size: 14px !important;
+  line-height: 21px !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.gallery .gallery__image:hover {
+  outline: 0.1rem solid #375FEB;
+  z-index: 10;
+}
+.gallery .gallery__image:hover p {
+  opacity: 1;
+}
+.gallery .image--1 {
+  background: url(../media/images/gallery-event1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gallery .image--2 {
+  background: url(../media/images/gallery-event2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gallery .image--3 {
+  background: url(../media/images/gallery-event3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gallery .image--4 {
+  background: url(../media/images/gallery-event4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gallery .image--5 {
+  background: url(../media/images/gallery-event5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gallery .image--6 {
+  background: url(../media/images/gallery1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=styles.bundle.css.map*/

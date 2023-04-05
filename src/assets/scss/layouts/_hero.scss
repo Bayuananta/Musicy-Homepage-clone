@@ -12,6 +12,11 @@
         height: toRem(1066);
         width: 100%;
         padding-top: toRem(160);
+
+        @include respond (tablet) {
+            height: auto;
+            margin-bottom: toRem(32) !important;
+        }
     }
 
     .booking{
@@ -24,6 +29,10 @@
         border-radius: 10px;
         display: flex;
         flex-direction: row;
+
+        @include respond (tablet) {
+            flex-direction: column;
+        }
 
         .booking-btn{
             width: toRem(305);
@@ -38,7 +47,16 @@
             text-align: center;
             color: $color-5;
             outline: none;
-            border: none;
+            border: 2px solid $primary;
+            transition: all .2s ease-in;
+
+            &:hover{
+                background-color: #101324;
+            }
+
+            @include respond (phone) {
+                width: 100%;
+            }
         }
 
         .booking-form{
@@ -46,6 +64,10 @@
             width: 100%;
             padding: toRem(59) 0;
             margin: 0 auto;
+
+            @include respond (tablet) {
+                padding: toRem(59) toRem(16);
+            }
         }
 
         .form{
@@ -62,6 +84,16 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+
+                @include respond (phone) {
+                    justify-content: space-around;
+                }
+
+                @include respond (phone-smallest) {
+                    flex-direction: column;
+                }
+
+                
                 
                 p{
                     @include p-4();
@@ -85,12 +117,24 @@
                 flex-direction: row;
                 justify-content: space-between;
                 margin-top: toRem(16);
+
+                @include respond (phone) {
+                    flex-direction: column;
+                }
             }
 
             .ticket-radio{
                 display: flex;
                 justify-content: space-between;
                 width: toRem(305);
+
+                @include respond (phone) {
+                    width: auto;
+                }
+
+                @include respond (phone-smallest) {
+                    flex-direction: column;
+                }
 
                 /* The container */
                 .content {
@@ -177,6 +221,13 @@
                 border-radius: 4.3367px;
                 width: toRem(305);
                 transition: all .2s ease-in;
+
+                @include respond (phone) {
+                    width: auto;
+                }
+                @include respond (phone-smallest) {
+                    padding: 0.25rem 0;
+                }
                 
                 &:hover,
                 &:active{
@@ -198,6 +249,15 @@
                 display: flex;
                 justify-content: space-between;
                 width: toRem(305);
+
+                @include respond (tablet) {
+                    gap: toRem(10);
+                }
+
+                @include respond (phone) {
+                    flex-direction: column;
+                    width: auto;
+                }
             }
 
             .form__input-date{
@@ -206,6 +266,14 @@
                 border-radius: 4.3367px;
                 width: toRem(91);
                 transition: all .2s ease-in;
+
+                @include respond (tablet) {
+                    padding: toRem(4) 0;
+                }
+
+                @include respond (phone) {
+                    width: auto;
+                }
                 
                 &:hover,
                 &:active{
@@ -220,6 +288,10 @@
                 font-weight: 800;
                 line-height: 33px;
                 color: $color-5;
+
+                @include respond (tablet) {
+                    text-align: center
+                }
             }
 
             p{
@@ -229,6 +301,10 @@
                 font-weight: 400;
                 line-height: 24px;
                 color: #9FA1A7; 
+
+                @include respond (tablet) {
+                    text-align: center
+                }
             }
         }
 
@@ -242,11 +318,20 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @include respond (tablet) {
+                width: auto;
+                padding: toRem(16) toRem(16);
+            }
         }
 
         .booking-contents{
             width: toRem(277);
             margin: 0 auto;
+
+            @include respond (tablet) {
+                width: auto;
+            }
 
             h2{
                 font-family: 'Gilroy';
@@ -254,6 +339,13 @@
                 font-weight: 800;
                 line-height: 47px;
                 color: $color-5;
+
+                @include respond (tablet) {
+                    line-height: 30px;
+                    width: toRem(108);
+                    margin: 0 auto;
+                    text-align: center;
+                }
             }
 
             p{
@@ -264,6 +356,10 @@
                     font-weight: 400;
                     color: $color-5;
                     margin-bottom: toRem(24);
+
+                    @include respond (tablet) {
+                        margin-bottom: toRem(16);
+                    }
                 }
 
                 &:nth-child(4){
@@ -282,6 +378,10 @@
             border-radius: 4px;
             text-align: center;
 
+            @include respond (tablet) {
+                margin: 0 auto
+            }
+
             p{
             @include p-5();
             font-family: 'Inter';
@@ -293,7 +393,8 @@
     }
 
     .countdown{
-        width: toRem(640);
+        max-width: toRem(640);
+        width: 100%;
         margin: 0 auto;
 
         h3{
@@ -311,6 +412,11 @@
             justify-content: space-around;
             margin-top: toRem(32);
             margin-bottom: toRem(80);
+
+            @include respond (phone) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         .countdown-day,
@@ -342,9 +448,44 @@
         }
     }
 
+    .hero__title{
+        max-width: toRem(1000);
+        margin: toRem(250) auto;
+
+        h1{
+            @include Big-Bold(uppercase);
+            font-style: 'Gilroy', normal;
+            font-weight: 800;
+            color: $primary;
+            text-align: center;
+
+            @include respond (phone-mini){
+                font-size: 78px;
+            }
+
+            span{
+                color: $color-5 !important;
+            }
+        }
+
+        p{
+            @include Medium-Upper(uppercase);
+            color: $color-5;
+            margin-top: toRem(30);
+            text-align: center;
+            font-weight: 300;
+
+            @include respond (phone) {
+                font-size: 18px;
+            }
+        }
+    }
+
     .bio__title{
         max-width: toRem(1000);
         margin: toRem(250) auto;
+
+        
 
         h1{
             @include Big-Bold(uppercase);

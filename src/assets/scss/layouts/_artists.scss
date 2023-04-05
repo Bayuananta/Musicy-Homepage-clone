@@ -25,10 +25,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include respond (tab-mini) {
+           height: auto;
+        }
     }
 
     .artist{
-        width: toRem(200);
+        // width: toRem(200);
         height: toRem(217);
         display: flex;
         justify-content: flex-end;
@@ -112,6 +116,26 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include respond (tab-mini) {
+            grid-column: 1 / -1;
+        }
+        @include respond (phone-mini) {
+            grid-column: 2 / 3;
+        }
+        
+
+        h5{
+            @include respond (tab-mini) {
+                text-align: center;
+            }
+        }
+
+        p{
+            @include respond (tab-mini) {
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -120,5 +144,13 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+
+    @include respond (tab-mini) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include respond (phone-mini) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
