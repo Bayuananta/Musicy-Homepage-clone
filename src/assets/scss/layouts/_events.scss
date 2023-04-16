@@ -109,28 +109,33 @@
         }
 
         .events__content--1{
-            background: url(../../media/images/event1.jpg);
+            background: linear-gradient(180deg, rgba(19, 23, 43, 0) 0%, rgba(19, 23, 43, 0.87) 66.15%, #13172B 100%), url(../../media/images/event1.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+            object-fit: cover;
+            border-radius: 3px;
         }
         .events__content--2{
-            background: url(../../media/images/event2.jpg);
+            background: linear-gradient(180deg, rgba(19, 23, 43, 0) 0%, rgba(19, 23, 43, 0.87) 66.15%, #13172B 100%), url(../../media/images/event2.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+            border-radius: 3px;
         }
         .events__content--3{
-            background: url(../../media/images/event3.jpg);
+            background: linear-gradient(180deg, rgba(19, 23, 43, 0) 0%, rgba(19, 23, 43, 0.87) 66.15%, #13172B 100%), url(../../media/images/event3.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+            border-radius: 3px;
         }
         .events__content--4{
-            background: url(../../media/images/event4.jpg);
+            background: linear-gradient(180deg, rgba(19, 23, 43, 0) 0%, rgba(19, 23, 43, 0.87) 66.15%, #13172B 100%), url(../../media/images/event4.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+            border-radius: 3px;
         }
 
         .event{

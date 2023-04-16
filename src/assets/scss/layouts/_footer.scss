@@ -50,6 +50,7 @@ footer{
 
                     @include respond(tab-mini){
                         padding: toRem(16);
+                        width: 100%;
                     }
                 }
     
@@ -64,14 +65,22 @@ footer{
                     box-shadow: 0px 130px 70px -90px rgba(0, 0, 0, 0.25);
                     border-radius: 45.5px;
                     margin-right: toRem(24);
+                    transition: all .2s linear;
+
+                    &:hover,
+                    &:active{
+                        border: 2px solid $primary;
+                    }
 
                     @include respond(tab-mini){
                         padding: toRem(16);
-                        margin-bottom: toRem(16)
+                        margin-bottom: toRem(16);
+                        margin-right: 0;
+                        
                     }
 
-                    @include respond(phone){
-                        width: 80%;
+                    @include respond(phone-mini){
+                        width: 100%;
                     }
     
                     input{
@@ -108,8 +117,8 @@ footer{
         flex-direction: column;
         margin: 0 auto;
     
-        @include respond(tablet) {
-            
+        @include respond(phone-mini) {
+            width: 100%;
         }
     
         .sosmed{
@@ -119,6 +128,11 @@ footer{
             align-items: center;
             height: toRem(24);
             margin-bottom: toRem(64);
+
+            @include respond (phone-mini) {
+                width: 100%;
+                justify-content: space-around;
+            }
 
             .logo_plat-1{
                     background-color: $color-5;

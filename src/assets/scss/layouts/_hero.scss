@@ -1,10 +1,275 @@
+
+
+.hero-article{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: toRem(80);
+
+    @include respond (tab-port) {
+        padding: 0 !important;
+    }
+}
+
 .hero{
     position: relative;
     width: 100%;
     height: 100%;
 
     @include respond (tab-port) {
-        padding: 0 toRem(32);
+        padding: 0 toRem(24);
+    }
+
+    .hero__article{
+        max-width: toRem(765);
+        width: 100%;
+        margin: 0 auto;
+
+        @include respond (tablet) {
+            padding: 0 toRem(24);
+        }
+
+        p{
+            &:first-child{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                padding: 4px 16px;
+                background: #F74141;
+                border-radius: 4px;
+                width: fit-content;
+                text-align: center;
+                color: $color-5;
+                margin-bottom: toRem(16);
+            }
+
+            &:nth-child(2){
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: #3B94E7;
+                margin-bottom: toRem(8);
+            }
+        }
+
+        h1{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 60px;
+            color: $color-5;
+            margin-bottom: toRem(32);
+
+            @include respond (tab-mini){
+                font-size: 44px;
+            }
+
+            @include respond (phone-mini){
+                font-size: 32px;
+                line-height: 35px;
+            }
+        }
+
+        h5{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 28px;
+            color: $color-5;
+            margin-bottom: toRem(46);
+
+            @include respond (tab-mini) {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
+        .hero__article--medsos{
+            display: flex;
+            a{
+                &:not(:last-child){
+                    margin-right: toRem(32);
+                }
+
+                .logo_plat-1{
+                    background-color: $color-5;
+                    mask: url(../../media/images/Twitter.svg) no-repeat center;
+                    -webkit-mask: url(../../media/images/Twitter.svg) no-repeat center;
+                    height: toRem(24);
+                    width: toRem(24);
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        background-color: $secondary-4;
+                        transform: translateY(-2px);
+                    }
+                }
+                .logo_plat-2{
+                    background-color: $color-5;
+                    mask: url(../../media/images/Facebook.svg) no-repeat center;
+                    -webkit-mask: url(../../media/images/Facebook.svg) no-repeat center;
+                    height: toRem(24);
+                    width: toRem(24);
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        background-color: $primary;
+                        transform: translateY(-2px);
+                    }
+                }
+                .logo_plat-3{
+                    background-color: $color-5;
+                    mask: url(../../media/images/Instagram.svg) no-repeat center;
+                    -webkit-mask: url(../../media/images/Instagram.svg) no-repeat center;
+                    height: toRem(24);
+                    width: toRem(24);
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        background-color: $secondary;
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+    .slick-dots{
+        width: 100%;
+        position: absolute;
+        bottom: 15%;
+        left: 96%;
+        transform: translate(-50%, -50%);
+        display: flex;
+
+        @include respond(phone-mini){
+            left: 85%;
+        }
+    
+            li {
+                margin: 0 4px;
+                overflow: hidden;
+                border: none;
+                
+                button {
+                    background-color: #9FA1A7;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    
+                    &::before{
+                        display: none;
+                    }
+
+                    &::after{
+                        display: none;
+                    }
+                }
+                &.slick-active {
+                    button {
+                        background-color: $primary;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                    }
+                }
+            } 
+         }
+
+    .bg-1{
+        width: 100%;
+        height: toRem(700);
+        background: radial-gradient(44.9% 44.26% at 50% 49.94%, rgba(16, 19, 36, 0.3) 0%, rgba(16, 19, 36, 0.6) 32.81%, rgba(16, 19, 36, 0.95) 100%), url(../../media/images/bg-news1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .hero__content{
+        padding-top: toRem(175);
+        max-width: toRem(1000);
+        width: 100%;
+        margin: 0 auto 0;
+        
+        h1{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 60px;
+            color: $color-5;
+            margin-bottom: toRem(32);
+
+            
+        }
+        a{
+            @include p-2();
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #5486E8;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all .2s ease-in;
+            padding: 8px;
+
+            &:hover{
+                color: $color-5;
+                background-color: $primary;
+            }
+        }
+        
+
+        p{
+            &:nth-child(2){
+                color: #3B94E7;
+                @include p-2();
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: toRem(8);
+            }
+
+            &:nth-child(4){
+                @include p-5();
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #9FA1A7;
+                margin-bottom: toRem(24);;
+            }
+        }
+
+        .content__label{
+            background: #F74141;
+            border-radius: 4px;
+            padding: 1px 0;
+            width: toRem(60);
+            margin-bottom: toRem(16);
+            
+            p{
+                margin-bottom: 0;
+                @include p-5();
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: $color-5;
+                text-align: center;
+            }
+        }
     }
 
     .container-booking{
@@ -393,9 +658,9 @@
     }
 
     .countdown{
-        max-width: toRem(640);
+        max-width: 35.75rem;
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto toRem(96);
 
         h3{
             font-family: 'Gilroy';
@@ -406,46 +671,41 @@
             color: $color-5;
         }
 
-        .countdown-time{
+        ul{
             display: flex;
-            width: 100%;
             justify-content: space-around;
-            margin-top: toRem(32);
-            margin-bottom: toRem(80);
-
-            @include respond (phone) {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
+            padding-left: 0;
+        }
+          
+          li {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-5;
+            display: inline-block;
+            list-style-type: none;
+            padding: 1em;
+          }
+          
+          li span {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 72px;
+            line-height: 60px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-5;
+            display: block;
+          }
         }
 
-        .countdown-day,
-        .countdown-hours,
-        .countdown-minutes,
-        .countdown-seconds{
-            display: flex;
-            flex-direction: column;
-
-            p{
-                &:first-child{
-                    @include Large(uppercase);
-                    font-family: 'Gilroy';
-                    font-style: normal;
-                    font-weight: 300;
-                    text-align: center;
-                    color: $color-5;
-                }
-                
-                &:nth-child(2){
-                    @include Small-Upper(uppercase);
-                    font-family: 'Gilroy';
-                    font-style: normal;
-                    font-weight: 300;
-                    text-align: center;
-                    color: $color-5;
-                }
-            }
-        }
+    .hero__title-contact{
+        margin: toRem(230) auto toRem(97) !important;
     }
 
     .hero__title{
@@ -459,8 +719,12 @@
             color: $primary;
             text-align: center;
 
+            @include respond (tab-mini) {
+                font-size: 76px;
+            }
+
             @include respond (phone-mini){
-                font-size: 78px;
+                font-size: 64px;
             }
 
             span{
@@ -592,12 +856,14 @@
                 width: 100%;
                 flex-direction: row;
 
-                @include respond (phone) {
-                    flex-direction: column;
+                @include respond (tab-mini) {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: toRem(16);
                 }
 
-                @include respond (tablet) {
-                    gap: 0;
+                @include respond (phone-mini) {
+                    grid-template-columns: repeat(1, 1fr);
                 }
 
                 .band-history__sub-box{
@@ -610,6 +876,9 @@
                         width: 100%;
                         height: 100%;
                     }
+                    
+
+                    
 
                     &:first-child{
                         margin-top: toRem(100);
@@ -623,11 +892,11 @@
                         margin-top: toRem(184);
 
                         @include respond (tablet) {
-                            margin-top: 8.5rem;
+                            margin-top: toRem(100);
                         }
 
                         @include respond (tab-mini) {
-                            margin-top: 2rem;
+                            margin-top: 0;
                         }
                     }
 
@@ -635,30 +904,30 @@
                         margin-top: 0;
 
                         @include respond (tablet) {
-                            margin-top: 10.5rem;
+                            margin-top: toRem(100);
                         }
 
                         @include respond (tab-mini) {
-                            margin-top: 4rem;
+                            margin-top: 0;
                         }
 
                         @include respond (phone-smallest) {
-                            margin-top: 2rem;
+                            margin-top: 0rem;
                         }
                     }
                     &:nth-child(4){
                         margin-top: toRem(110);
 
                         @include respond (tablet) {
-                            margin-top: 12.5rem;
+                            margin-top: toRem(100);
                         }
 
                         @include respond (tab-mini) {
-                            margin-top: 6rem;
+                            margin-top: 0;
                         }
 
                         @include respond (phone-smallest) {
-                            margin-top: 2rem;
+                            margin-top: 0;
                         }
                     }
 
@@ -707,8 +976,8 @@
                     }
                     .sub-content{
                         @include respond (phone){
-                            width: toRem(200);
-                            margin: 0 auto;
+                            width: 100%;
+                            text-align: center;
                         }
 
                         p{
@@ -746,10 +1015,6 @@
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
-
-                    @include respond (tablet) {
-                        top: 100%
-                    }
 
                     @include respond (tab-mini) {
                         top: 35%
@@ -791,6 +1056,10 @@
                     width: 100%;
                     margin-top: toRem(80);
                     align-items: center;
+
+                    @include respond (tablet) {
+                        padding: 0 toRem(32);
+                    }
 
                     @include respond (tab-mini) {
                         margin-top: toRem(20);
@@ -838,8 +1107,6 @@
             position: relative;
 
             .arrows{
-                width: 100%;
-                height: 100%;
 
                 
 
@@ -919,6 +1186,7 @@
                                 background-color: #9FA1A7;
                                 width: 10px;
                                 height: 10px;
+                                border-radius: 50%;
                                 
                                 &::before{
                                     display: none;
@@ -932,7 +1200,8 @@
                                 button {
                                     background-color: $primary;
                                     width: 10px;
-                                    height: 10px
+                                    height: 10px;
+                                    border-radius: 50%;
                                 }
                             }
                         } 
@@ -955,21 +1224,13 @@
                     .content-left{
                         position: relative;
 
-                        &:hover .img-tour{
-                            transform: scale(1.2);
-                            filter: blur(3px) brightness(80%);
-                        }
-
-                        &:hover .tour-caption{
-                            transform: scale(1);
-                        }
-
                         .img-tour{
                             width: toRem(270);
                             height: toRem(379);
                             background: url(../../media/images/spencer-davis-naFHFLV5cqU-unsplash.jpg);
                             background-size: cover;
                             background-position: center;
+                            background-repeat: no-repeat;
                             margin-right: toRem(64);
                             transition: all .2s ease-out;
     
@@ -988,18 +1249,22 @@
     
     
                             @include respond(tablet){
-                                width: toRem(534);
+                               width: toRem(500);
                                height: toRem(320);
                                margin-bottom: toRem(16);
                                margin-right: 0;
                             }
-
-                            @include respond (tab-mini) {
-                                width: toRem(358);
+                            @include respond(tab-mini){
+                               width: toRem(390);
                             }
     
                             @include respond(phone-mini){
                                 margin: 0;
+                                width: toRem(290);
+                            }   
+
+                            @include respond(phone-smallest){
+                                width: 14rem;
                             }   
 
                         }
@@ -1010,10 +1275,14 @@
                             justify-content: center;
                             align-items: center;
                             z-index: 10;
-                            left: 25%;
-                            top: 40%;
-                            transform: translate(-50%, -50%) scale(0);
+                            left: 40%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
                             transition: all .2s ease-out;
+
+                            @include respond(tablet) {
+                                left: 50%;
+                            }
 
                             h3{
                                 font-family: "gilroy";

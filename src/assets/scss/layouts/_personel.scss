@@ -11,13 +11,13 @@
         padding: toRem(16) toRem(32);
     }
 
-    @include respond (tab-mini) {
+    @include respond (tablet) {
         height: 100%;
-        padding: toRem(16) toRem(16);
     }
 
-    @include respond (phone-mini) {
-        height: 100%;
+    @include respond (tab-mini) {
+        
+        padding: toRem(16) toRem(16);
     }
 
     .container{
@@ -37,6 +37,10 @@
             margin: 0 auto toRem(143.95);
             border-bottom: 1px solid rgba(255, 255, 255, 0.13);
 
+            @include respond (tablet) {
+                margin: 0 auto;
+            }
+
             h2{
                 font-family: 'Gilroy';
                 font-style: normal;
@@ -53,17 +57,8 @@
             width: 100%;
             gap: toRem(38);
 
-            @include respond (tab-mini) {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            @include respond (phone-mini) {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            @include respond (phone-smallest) {
-                gap: toRem(16);
+            @include respond (tablet) {
+                display: none;
             }
 
             .personel__list--content{
@@ -121,10 +116,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-
-            @include respond (tab-mini) {
-                margin-top: toRem(96);
-            }
 
             h3{
                 width: 100%;

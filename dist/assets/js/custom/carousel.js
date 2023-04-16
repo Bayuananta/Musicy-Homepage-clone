@@ -3314,6 +3314,16 @@ var __webpack_exports__ = {};
 const { arrow } = __webpack_require__(/*! @popperjs/core */ "./node_modules/@popperjs/core/lib/index.js");
 
 $(document).ready(function(){
+
+  $('.hero__news').slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true
+  });
   
   $('.tour-content').slick({
     arrows: true,

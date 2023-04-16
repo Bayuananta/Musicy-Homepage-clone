@@ -76,6 +76,7 @@
                     background: #13172B;
                     box-shadow: -9px 0px 15px -3px rgba(0, 0, 0, 0.69);
                     transition: all 0.2s ease-out;
+                    cursor: pointer;
 
                     &:hover{
                         background: $primary;
@@ -109,6 +110,7 @@
                         background: #13172B;
                         box-shadow: -9px 0px 15px -3px rgba(0, 0, 0, 0.69);
                         transition: all 0.2s ease-out;
+                        cursor: pointer;
 
                         &:hover{
                             background: $primary;
@@ -227,6 +229,17 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+
+                .plyr{
+                    .plyr__control--overlaid{
+                        
+                        transition: all linear .2s;
+                        &:hover{
+                            background-color: #13172B;
+                            border: 2px solid $primary; 
+                        }
+                    }
+                }
 
                 .about__video{
                     width: 100%;

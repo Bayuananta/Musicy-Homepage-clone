@@ -4,7 +4,7 @@
     width: 100%;
     height: toRem(947);
 
-    @include respond (phone) {
+    @include respond (tablet) {
         height: 100%
     }
 
@@ -19,7 +19,7 @@
         height: toRem(553);
         padding-top: 2rem;
 
-        @include respond (phone) {
+        @include respond (tablet) {
            height: 100%;
         }
 
@@ -36,9 +36,14 @@
 
             @include respond(tablet){
                 width: 100%;
-                flex: none;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: toRem(16);
                 height: 100%;
-                flex-wrap: wrap;
+            }
+
+            @include respond (phone){
+             grid-template-columns: repeat(1, 1fr);   
             }
 
             .media__gallery--img{
@@ -47,9 +52,12 @@
                 flex-direction: column;
                 width: 100%;
 
+                &:last-child{
+                    grid-column: 1 / -1;
+                }
+
                 @include respond(tablet){
                     width: auto;
-                    margin: 0 auto;
                 }
 
                 @include respond(phone-smallest){
@@ -82,7 +90,7 @@
 
                     @include respond (tablet){
                         position: unset;
-                        width: max-content;
+                        // width: max-content;
                     }
                 }
 
@@ -112,7 +120,7 @@
 
                     @include respond (tablet){
                         position: unset;
-                        width: max-content;
+                        // width: max-content;
                     }
                 }
 
@@ -145,8 +153,9 @@
 
                     @include respond (tablet){
                         position: unset;
-                        width: 100%;
-                        justify-content: center;
+                        // width: max-content;
+                        width: auto;
+                        height: auto;
                     }
                 }
 
@@ -160,8 +169,13 @@
                     border-radius: 5px;
                     margin-bottom: toRem(32);
 
-                    @include respond (tablet){
-                        margin-bottom: toRem(16);
+                    @include respond (phone){
+                        margin-bottom: 0;
+                        height: auto;
+
+                        &:first-child{
+                            margin-bottom: toRem(16);
+                        }
                     }
                 }
             }
