@@ -15050,6 +15050,9 @@ footer .contact span {
     padding: 0 1.5rem;
   }
 }
+.latest-news a {
+  text-decoration: none;
+}
 .latest-news h2, .latest-news .h2 {
   text-align: center;
   font-family: "Gilroy";
@@ -15061,6 +15064,7 @@ footer .contact span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.13);
   padding-bottom: 3rem;
   margin-bottom: 4.5rem;
+  cursor: pointer;
 }
 .latest-news .container {
   max-width: 62.5rem;
